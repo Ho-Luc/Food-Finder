@@ -10,10 +10,10 @@ var app = express();
 app.get('/', function (req, res) {
   //request API access
     var yelp = new Yelp({
-        consumer_key: 'dVH3imXJeAlRaAD6cbphoQ',
-        consumer_secret: 'TJvAkxhIkFgccCRTdc_57h7Hlhw',
-        token: 'ZVolrF0alQEkhpimxOWzYAcgqCrCxc1j',
-        token_secret: 'eV_RwX15bxPaGcYJGBOZ64N144U',
+        consumer_key: '',
+        consumer_secret: '',
+        token: '',
+        token_secret: '',
     });
 
     //url is used to parse query string
