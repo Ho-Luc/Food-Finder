@@ -1,25 +1,49 @@
-var requestProxy = require('express-request-proxy'),
-  express = require('express'),
-  port = process.env.PORT || 3000,
-  app = express();
+//require() is node.js's module loading system
+var express = require('express');
+var Yelp = require('yelp');
+//load url and this variable is used below
+var url = require('url');
+//inintializes express app
+var app = express();
 
-var proxyGitHub = function(request, response) {
-  console.log('Routing GitHub request for', request.params[0]);
-  (requestProxy({
-    url: 'https://api.github.com/' + request.params[0],
-    headers: { Authorization: 'token ' + process.env.GITHUB_TOKEN }
-  }))(request, response);
-};
+//API that app calls
+app.get('/', function (req, res) {
+  //request API access
+    var yelp = new Yelp({
+        consumer_key: '',
+        consumer_secret: '',
+        token: '',
+        token_secret: '',
+    });
 
-app.get('/github/*', proxyGitHub);
+    //url is used to parse query string
+    // gives back an object with each part of the url in a different parameter
+    var url_parts = url.parse(req.url, true);
+    //query is the name of the variable that stores the query string object
+    //and query is the named of the query parameter passed to the url eg localhost:3000/?query=beacon
+    var query=url_parts.query;
 
-app.use(express.static('./'));
+    // Search function is from https://github.com/olalonde/node-yelp
+    //See http://www.yelp.com/developers/documentation/v2/search_api
+    // Term is an additional query parameter.
+    // E.g. localhost:3000/?query=beacon
+    yelp.search({
+        category_filter: 'foodbanks',
+        location: 'Seattle',
+        term: query.query
 
-app.get('*', function(request, response) {
-  console.log('New request:', request.url);
-  response.sendFile('index.html', { root: '.' });
+    }).then(function (data) {
+        console.log(data);
+        res.send(data);
+
+    }).catch(function (err) {
+        console.error(err);
+
+    });
+
 });
 
-app.listen(port, function() {
-  console.log('Server started on port ' + port + '!');
+app.listen(3000, function () {
+    console.log('Example app listening on port 3000!');
+
 });

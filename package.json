@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "mvc-food-finder",
   "version": "1.0.0",
@@ -11,5 +12,20 @@
   "dependencies": {
     "express": "^4.13.3",
     "express-request-proxy": "^1.0.10"
+=======
+
+{
+  "name": "food-finder",
+  "version": "1.0.0",
+  "description": "Food Bank and Finder app for the Seattle Area",
+  "main": "server.js",
+  "author": "301d5 Students",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-request-proxy": "^1.0.10",
+    "request": "~2.69.0",
+    "yelp": "~1.0.1"
+>>>>>>> master
   }
 }
