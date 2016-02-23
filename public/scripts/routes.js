@@ -1,8 +1,9 @@
-// page('/',
-//   // articlesController.loadAll,
-//   // articlesController.index);
+// page('/', homeController.index);
 //
+// page('/finder', finderController.index );
+// page('/resources', resouresController.index);
 // page('/about', aboutController.index);
-// /// routes will continue once we have information to manipulate. 10:22a 2-22
-//
+
 // page();
+
+//added pseudo routes and commented these out as we do not have functions to run once routes are clicked
