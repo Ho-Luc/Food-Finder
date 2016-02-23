@@ -1,40 +1,46 @@
 (function(module) {
 
 
-
 function Meal (opts) {
-  this.mealType = opts.mealType;
-  this.address = opts.address;
-  this.peopleServed = opts.peopleServed;
-  this.timesOpen = opts.timesOpen;
-  this.programName = opts.programName;
-  this.id;
-}
+  // this.mealType = opts.mealType;
+  // this.address = opts.address;
+  // this.peopleServed = opts.peopleServed;
+  // this.timesOpen = opts.timesOpen;
+  // this.programName = opts.programName;
+  // this.id = opts.id;
+
+  Object.keys(opts).forEach(function(e, index, keys) {
+  this[e] = opts[e];
+},this);
+
+};
+// return this.all;
 
 Meal.all = [];
+
   //populate meal type from array
   var mealType = []
-  data.forEach(function(ele) {
+  dataJSON.forEach(function(ele) {
     mealType.push(ele[9])
   });
   //populate address from array
   var address = []
-  data.forEach(function(ele) {
+  dataJSON.forEach(function(ele) {
     address.push(ele[11])
   });
   //populate people served from array
   var peopleServed = []
-  data.forEach(function(ele) {
+  dataJSON.forEach(function(ele) {
     peopleServed.push(ele[10])
   });
   //populate times opened from array
   var timesOpen = []
-  data.forEach(function(ele) {
+  dataJSON.forEach(function(ele) {
     timesOpen.push(ele[8])
   });
   //populate program name from array
   var programName = []
-  data.forEach(function(ele) {
+  dataJSON.forEach(function(ele) {
     programName.push(ele[12])
   });
 
@@ -95,7 +101,7 @@ Meal.createTable = function(callback) {
     );
   };
 
-  //  Delete a meal instance from the database:
+  // Delete a meal instance from the database:
     Meal.prototype.deleteRecord = function(callback) {
     webDB.execute(
       [
@@ -125,29 +131,43 @@ Meal.createTable = function(callback) {
       }
     );
   };
+  Meal.loadAll = function(rows) {
+    Meal.all = rows.map(function(ele) {
+      return new Meal(ele);
+    });
+  };
+
   Meal.fetchAll = function(next) {
-    webDB.execute('SELECT * FROM meals ', function(rows) {
-      $.getJSON('/data/mealData.json', function(rawData) {
-        // Cache the json, so we don't need to request it next time:
-        rawData.forEach(function(item) {
-          var meal = new Meal(item); // Instantiate an article based on item from JSON
-          meal.insertRecord();// Cache the newly-instantiated meal in DB:
-        });
-        // Now get ALL the records out the DB, with their database IDs:
-        webDB.execute('SELECT * FROM meals', function(rows) {
+    webDB.execute('SELECT * FROM meals', function(rows) {
+        if (rows.length) {
+          Meal.loadAll(rows);
+        } else {
+          $.getJSON('public/data/mealData.json', function(rawData) {
+            rawData.forEach(function(item) {
+              var meal = new Meal(item); // Instantiate a meal based on item from JSON
+              meal.insertRecord();
+            });
+            webDB.execute('SELECT * FROM meals', function(rows) {
           // Now instanitate those rows with the .loadAll function, and pass control to the view.
-          meal.loadAll(rows);
-          next();
+            Meal.loadAll(rows);
+            next();
         });
       });
     }
-  }
-Meal.allMealTypes = function() {
-  return Meal.all.map(function(meal) {
-    return meal.mealType;
-  })
+  });
 };
+//return the array of all mealtypes summed up
+Meal.allMeals = function() {
+  return Meal.all.map(function(meal) {
+    return meal.mealTypes;
+})
+  .reduce(function(meals, meal) {
+    if (meals.indexOf(meal) === -1) {
+      names.push(meal);
+    }
+    return meals;
 
-
+  }, []);
+};
   module.Meal = Meal;
 })(window);
