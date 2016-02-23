@@ -2,7 +2,7 @@
   var googleMap = {};
   var latLng = [];
   var map;
-  // var myLatLng = {lat: 47.565406, lng: -122.2900488};
+  var myLatLng = {lat: 47.565406, lng: -122.2900488};
 
   googleMap.initMap = function() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -11,7 +11,7 @@
     });
 
     var marker = new google.maps.Marker({
-      position: {lat: latLng.results.geometry.location.lat, lng: latLng.results.geometry.location.lng},
+      position: myLatLng,
       map: map,
       title: 'Food banks'
     })
