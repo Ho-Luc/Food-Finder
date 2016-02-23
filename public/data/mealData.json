@@ -1,0 +1,554 @@
+
+{
+  "meta" : {
+  "view" : {
+    "id" : "hmzu-x5ed",
+      "name" : "Meals Programs in Seattle",
+      "attribution" : "Department of Human Services",
+      "attributionLink" : "http://www.seattle.gov/humanservices/",
+      "averageRating" : 0,
+      "createdAt" : 1272492358,
+      "description" : "This data set provides the names, locations, and service days of meal programs that serve free meals to low-income and homeless people in Seattle. It also provides the kinds of meals served.",
+      "downloadCount" : 680,
+      "indexUpdatedAt" : 1450832409,
+      "licenseId" : "CC0_10",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 299187,
+      "publicationAppendEnabled" : true,
+      "publicationDate" : 1302998589,
+      "publicationGroup" : 216845,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1313894908,
+      "rowsUpdatedBy" : "zxcy-ghm5",
+      "tableId" : 216845,
+      "totalTimesRated" : 0,
+      "viewCount" : 2447,
+      "viewLastModified" : 1402681363,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : 2462196,
+        "name" : "Day_Time",
+        "dataTypeName" : "text",
+        "description" : "Day and time that service is provided",
+        "fieldName" : "day_time",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1359238,
+        "width" : 166,
+        "cachedContents" : {
+          "non_null" : 77,
+          "smallest" : "1st, 2nd, and 4th Sunday: 1:00 - 2:00 P.M.  ",
+          "null" : 0,
+          "largest" : "Wednesdays: 12:00 - 1:00 P.M.",
+          "top" : [ {
+            "count" : 1,
+            "item" : "Tuesdays: 11:00 A.M. - 1:00 P.M."
+          }, {
+            "count" : 1,
+            "item" : "Daily: 1st seating is 7:20 - 7:50 A.M. (overnight guests only)                                                               2nd seating is 8:10 - 8:40 A.M. (day program clients)"
+          }, {
+            "count" : 1,
+            "item" : "Tuesday & Thursday: 12:30 P.M."
+          }, {
+            "count" : 1,
+            "item" : "Mon, Wed, Thurs, Friday - Sack Lunch 12 P.M., Tue - 12:30 P.M. (Hot Lunch)"
+          }, {
+            "count" : 1,
+            "item" : "4th Saturday: 6:30 - 8:30 P.M."
+          }, {
+            "count" : 1,
+            "item" : "Mon, Tues, Thurs, & Fri: 10:00  - 11:00 A.M."
+          }, {
+            "count" : 1,
+            "item" : "Daily: 6:00 - 7:15 pm"
+          }, {
+            "count" : 1,
+            "item" : "Sundays: 6:00 - 7:00 P.M.; Monday through Wednesday: 7:00 - 8:00 P.M."
+          }, {
+            "count" : 1,
+            "item" : "Fridays: 11:00 A.M. - 1:00 P.M."
+          }, {
+            "count" : 1,
+            "item" : "Tuesday & Friday: 12:00 P.M. (noon)"
+          }, {
+            "count" : 1,
+            "item" : "Fridays: 11:30 A.M. - 12:30 P.M."
+          }, {
+            "count" : 1,
+            "item" : "1st Sunday of each month 6:00 - 7:00 P.M."
+          }, {
+            "count" : 1,
+            "item" : "Daily: 12:00 P.M. (Closed 1st Wednesday of each month)"
+          }, {
+            "count" : 1,
+            "item" : "Last Sunday of Each Month / November - March: 8:00 - 10:00 AM"
+          }, {
+            "count" : 1,
+            "item" : "2nd Saturday: 3:00 - 4:30 P.M."
+          }, {
+            "count" : 1,
+            "item" : "Tuesdays: 7:00 - 8:00 P.M."
+          }, {
+            "count" : 1,
+            "item" : "Fridays & Sundays: 7:00 - 8:00 P.M. (Enter via alley, SW corner of building)"
+          }, {
+            "count" : 1,
+            "item" : "Wednesday & Friday: 11:30 A.M."
+          }, {
+            "count" : 1,
+            "item" : "Wednesday & Thursday: 7:00 - 8:00 P.M."
+          }, {
+            "count" : 1,
+            "item" : "Monday - Friday: 11:30 A.M.. - 12:30 P.M."
+          } ]
+        },
+        "format" : { }
+      }, {
+        "id" : 2462197,
+        "name" : "Meal_Served",
+        "dataTypeName" : "text",
+        "description" : "Meal served, breaqkfast, lunch, dinner",
+        "fieldName" : "meal_served",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1359239,
+        "width" : 202,
+        "cachedContents" : {
+          "non_null" : 77,
+          "smallest" : "  ",
+          "null" : 0,
+          "largest" : "Snack",
+          "top" : [ {
+            "count" : 39,
+            "item" : "Lunch"
+          }, {
+            "count" : 22,
+            "item" : "Dinner"
+          }, {
+            "count" : 13,
+            "item" : "Breakfast"
+          }, {
+            "count" : 2,
+            "item" : "Snack"
+          }, {
+            "count" : 1,
+            "item" : "  "
+          } ]
+        },
+        "format" : { }
+      }, {
+        "id" : 2462198,
+        "name" : "People_Served",
+        "dataTypeName" : "text",
+        "description" : "Service provide to all or a defined group",
+        "fieldName" : "people_served",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1359240,
+        "width" : 226,
+        "cachedContents" : {
+          "non_null" : 77,
+          "smallest" : "AMERICAN INDIANS ONLY",
+          "null" : 0,
+          "largest" : "YOUTH 22 AND YOUNGER",
+          "top" : [ {
+            "count" : 47,
+            "item" : "OPEN TO ALL"
+          }, {
+            "count" : 4,
+            "item" : "Youth 13-25"
+          }, {
+            "count" : 4,
+            "item" : "WOMEN 18 AND OLDER"
+          }, {
+            "count" : 2,
+            "item" : "OPEN TO 55+ "
+          }, {
+            "count" : 2,
+            "item" : "OPEN TO MEN 50+ "
+          }, {
+            "count" : 2,
+            "item" : "Youth 13-21"
+          }, {
+            "count" : 2,
+            "item" : "OPEN TO WOMEN & CHILDREN ONLY"
+          }, {
+            "count" : 2,
+            "item" : "OPEN TO ALL "
+          }, {
+            "count" : 1,
+            "item" : "YOUTH 22 AND YOUNGER"
+          }, {
+            "count" : 1,
+            "item" : "OPEN TO YOUTH UP TO  AGE 21"
+          }, {
+            "count" : 1,
+            "item" : "Women, Children, Families, Men 55+"
+          }, {
+            "count" : 1,
+            "item" : "Primarily low-income Samoan seniors"
+          }, {
+            "count" : 1,
+            "item" : "FOR YOUTH 22 OR YOUNGER "
+          }, {
+            "count" : 1,
+            "item" : "Primarily low-income Samoans"
+          }, {
+            "count" : 1,
+            "item" : "Drop-In Youth 12 - 22"
+          }, {
+            "count" : 1,
+            "item" : "OPEN TO 50+"
+          }, {
+            "count" : 1,
+            "item" : "OPEN TO ALL /            Must be sober"
+          }, {
+            "count" : 1,
+            "item" : "Primarily low-income Tongan & PI Seniors"
+          }, {
+            "count" : 1,
+            "item" : "OPEN TO AGES 60+"
+          }, {
+            "count" : 1,
+            "item" : "AMERICAN INDIANS ONLY"
+          } ]
+        },
+        "format" : { }
+      }, {
+        "id" : 2462199,
+        "name" : "Location",
+        "dataTypeName" : "text",
+        "description" : "Location of service",
+        "fieldName" : "location",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1359241,
+        "width" : 166,
+        "cachedContents" : {
+          "non_null" : 77,
+          "smallest" : "100 N street SE, Auburn",
+          "null" : 0,
+          "largest" : "Woodland Park Pres. Church 225 N. 70th, Seattle",
+          "top" : [ {
+            "count" : 16,
+            "item" : "Outdoor Meal Site at 6th and Columbia, Seattle"
+          }, {
+            "count" : 4,
+            "item" : "2030 3rd Ave, Seattle"
+          }, {
+            "count" : 3,
+            "item" : "318 2nd Ave. S. Extension,  Seattle"
+          }, {
+            "count" : 3,
+            "item" : "8201 10th Ave South, Seattle"
+          }, {
+            "count" : 2,
+            "item" : "85 Pike St.  #200,  Seattle"
+          }, {
+            "count" : 2,
+            "item" : "1828 Yale Avenue (on the corner of Denny and Stewart)"
+          }, {
+            "count" : 2,
+            "item" : "97 South Main St.,  Seattle"
+          }, {
+            "count" : 2,
+            "item" : "210 Dexter Avenue, Seattle"
+          }, {
+            "count" : 2,
+            "item" : "St. John's Lutheran                 5515 Phinney Ave N., Seattle"
+          }, {
+            "count" : 2,
+            "item" : "2022 Boren Avenue, Seattle"
+          }, {
+            "count" : 2,
+            "item" : "2709 3rd Ave., Seattle"
+          }, {
+            "count" : 2,
+            "item" : "2515 Western Ave.,  Seattle"
+          }, {
+            "count" : 1,
+            "item" : "803 Terry Ave., Seattle"
+          }, {
+            "count" : 1,
+            "item" : "2524 16th Ave. S, Seattle"
+          }, {
+            "count" : 1,
+            "item" : "410 2nd Ave. Extension So., Seattle"
+          }, {
+            "count" : 1,
+            "item" : "University Christian                  N.E. 50th & 15th N.E., Seattle"
+          }, {
+            "count" : 1,
+            "item" : "1561 Alaskan Way S.,  Seattle"
+          }, {
+            "count" : 1,
+            "item" : "416 Second Ave Extension South, Seattle"
+          }, {
+            "count" : 1,
+            "item" : "University Congregational     N.E. 45th & 16th N.E., Seattle (Down the seps off 16th)"
+          }, {
+            "count" : 1,
+            "item" : "111 NE 80th St.  Seattle"
+          } ]
+        },
+        "format" : { }
+      }, {
+        "id" : 2462200,
+        "name" : "Name_of_Program",
+        "dataTypeName" : "text",
+        "description" : "The name of  program providing service",
+        "fieldName" : "name_of_program",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1359242,
+        "width" : 250,
+        "cachedContents" : {
+          "non_null" : 77,
+          "smallest" : "(PSKS) Peace for the Streets by Kids from the Streets",
+          "null" : 0,
+          "largest" : "YWCA Angeline's Meals Program",
+          "top" : [ {
+            "count" : 4,
+            "item" : "University Street Ministry Teen Feed"
+          }, {
+            "count" : 3,
+            "item" : "Union Gospel Mission"
+          }, {
+            "count" : 3,
+            "item" : "Phinney Neighborhood Association"
+          }, {
+            "count" : 3,
+            "item" : "YWCA Angeline's Meals Program"
+          }, {
+            "count" : 2,
+            "item" : "Recovery Café"
+          }, {
+            "count" : 2,
+            "item" : "New Horizons Ministries"
+          }, {
+            "count" : 2,
+            "item" : "Youth Care's Orion Center"
+          }, {
+            "count" : 2,
+            "item" : "Pike Market Senior Center"
+          }, {
+            "count" : 2,
+            "item" : "Operation Sack Lunch"
+          }, {
+            "count" : 2,
+            "item" : "Neighborhood Cooking Foundation"
+          }, {
+            "count" : 2,
+            "item" : "Millionair Club Charity"
+          }, {
+            "count" : 2,
+            "item" : "Mary's Place / Church of Mary Magdalene"
+          }, {
+            "count" : 2,
+            "item" : "Bread of Life Mission"
+          }, {
+            "count" : 2,
+            "item" : "Anonymous Acts of Kindness"
+          }, {
+            "count" : 2,
+            "item" : "Saint Martin's de Porres Shelter"
+          }, {
+            "count" : 1,
+            "item" : "Lord's Table"
+          }, {
+            "count" : 1,
+            "item" : "Friends of Francois"
+          }, {
+            "count" : 1,
+            "item" : "ACRS Food Bank"
+          }, {
+            "count" : 1,
+            "item" : "Magic Works Alumni"
+          }, {
+            "count" : 1,
+            "item" : "(PSKS) Peace for the Streets by Kids from the Streets"
+          } ]
+        },
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Creative Commons 1.0 Universal (Public Domain Dedication)",
+        "logoUrl" : "images/licenses/ccZero.png",
+        "termsLink" : "http://creativecommons.org/publicdomain/zero/1.0/legalcode"
+      },
+      "metadata" : {
+        "custom_fields" : {
+          "Data Owner" : {
+            "Owner" : "Department of Human Services"
+          }
+        },
+        "rdfSubject" : "0",
+        "rowIdentifier" : "0",
+        "rdfClass" : ""
+      },
+      "owner" : {
+        "id" : "zxcy-ghm5",
+        "displayName" : "Department of Human Services",
+        "screenName" : "Department of Human Services"
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "zxcy-ghm5",
+        "displayName" : "Department of Human Services",
+        "screenName" : "Department of Human Services"
+      },
+      "tags" : [ "meal providers", "human services", "meals", "breakfast", "lunch", "dinner" ],
+      "flags" : [ "default" ]
+    }
+  },
+  "data" : [ [ 2, "A70FF4AB-72C0-417A-B851-76091BB29EE3", 2, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: 6:15 - 7:00 A.M.", "Breakfast", "OPEN TO ALL", "2515 Western Ave.,  Seattle", "Millionair Club Charity" ]
+, [ 3, "D8821C33-BED7-4AF8-9F3E-0416F841A65E", 3, 1272557492, "387346", 1272557492, "387346", null, "Sunday - Thursday 5:30 - 8:30 A.M.", "Breakfast", "OPEN TO ALL", "8201 10th Ave S., Seattle", "South Park Breakfast Bunch" ]
+, [ 4, "9EBCA58F-3410-4EC4-8C61-CF31877338BB", 4, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday 7:00 - 9:30 A.M.", "Breakfast", "AMERICAN INDIANS ONLY", "410 2nd Ave. Extension So., Seattle", "Chief Seattle Club" ]
+, [ 5, "E40AADFA-28B4-4FEC-8E5D-4FBE6E4CD1EF", 5, 1272557492, "387346", 1272557492, "387346", null, "Chapel required prior to meal service.  There are 3 daily Chapel services to choose from: 7-7:30 A.M., 7:45-8:15 A.M., 8:30-9 A.M.  (Meal served following each service.)", "Breakfast", "OPEN TO ALL", "318 2nd Ave. S. Extension,  Seattle", "Union Gospel Mission" ]
+, [ 6, "07AAB6F7-DCB1-4C12-85C6-64E08E26368E", 6, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: 8:30 - 11:00 A.M. (Sack lunch for the day)", "Breakfast", "OPEN TO ALL", "232 Warren Ave. North, Suite B, Seattle", "Sacred Heart Church/SVDP Society" ]
+, [ 7, "CE5EA541-B896-4138-A86B-FB121DA9F832", 7, 1272557492, "387346", 1272557492, "387346", null, "Daily: 1st seating is 7:20 - 7:50 A.M. (overnight guests only) 2nd seating is 8:10 - 8:40 A.M. (day program clients)", "Breakfast", "WOMEN 18 AND OLDER", "2030 3rd Ave, Seattle", "YWCA Angeline's Meals Program" ]
+, [ 8, "2A7A968A-42C6-4761-9B3C-BB711C97494F", 8, 1272557492, "387346", 1272557492, "387346", null, "3 Breakfasts per week on variable days: 8:00 A.M.", "Breakfast", "OPEN TO 55+ ", "85 Pike St.  Suite 200,  Seattle", "Pike Market Senior Center" ]
+, [ 9, "75431907-EEB9-433F-AB81-CAF95E05EE83", 9, 1272557492, "387346", 1272557492, "387346", null, "Daily: 8:00 A.M.", "Breakfast", "OPEN TO MEN 50+ ", "1561 Alaskan Way S.,  Seattle", "Saint Martin's de Porres Shelter" ]
+, [ 10, "02C9AFC7-7925-4EE9-801B-6D108DA591BA", 10, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: Breakfast 8:00 - 9:00 A.M.", "Breakfast", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Operation Sack Lunch" ]
+, [ 11, "B52C96F1-0C79-4E7A-8B91-52F78633BC12", 11, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: 8:30 - 9:30 A.M.; Saturdays: 10:00 A.M.", "Breakfast", "OPEN TO WOMEN & CHILDREN ONLY", "210 Dexter Avenue, Seattle", "Mary's Place / Church of Mary Magdalene" ]
+, [ 12, "88B49B60-66FB-49FF-8926-D42237CDC442", 12, 1272557492, "387346", 1272557492, "387346", null, "Tuesday - Sunday: 9:00 - 11:00 A.M.", "Breakfast", "OPEN TO ALL", "508 Broadway, Seattle", "Our Lady of Mt. Carmel" ]
+, [ 13, "64061B75-8B14-4F59-ADF3-7FDC4477AB78", 13, 1272557492, "387346", 1272557492, "387346", null, "3rd Sunday: Hot Brunch 10:00  - 11:00 A.M.", "Breakfast", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Mother's Kitchen" ]
+, [ 14, "335896D4-7D70-4EE3-941D-026CC53148DA", 14, 1272557492, "387346", 1272557492, "387346", null, "Mon, Tues, Thurs, & Fri: 10:00  - 11:00 A.M.", "Breakfast", "YOUTH 22 AND YOUNGER", "2709 3rd Ave., Seattle", "New Horizons Ministries" ]
+, [ 15, "3C6ED236-0EA1-4B00-BD7C-F3F664E765BA", 15, 1272557492, "387346", 1272557492, "387346", null, "Last Sunday of Each Month / November - March: 8:00 - 10:00 AM", "Breakfast", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Magic Works Alumni" ]
+, [ 16, "721005E3-8AAF-4A4D-B9FD-2E3448516817", 16, 1272557492, "387346", 1272557492, "387346", null, "Fridays: 10:30 A.M.", "Lunch", "OPEN TO ALL", "919 King Street, Seattle", "ACRS Food Bank" ]
+, [ 17, "E8893DE3-AA1E-4CAB-AAB8-245C8852CEF6", 17, 1272557492, "387346", 1272557492, "387346", null, "Tuesday through Friday: 11:00 A.M.- 1:00 P.M.", "Lunch", "OPEN TO YOUTH UP TO  AGE 21", "1814 Summit Ave.,  Seattle", "(PSKS) Peace for the Streets by Kids from the Streets" ]
+, [ 18, "C46A93B7-C554-4B34-B29E-A43FF7453F79", 18, 1272557492, "387346", 1272557492, "387346", null, "2nd  and 4th Sunday: 11:00 A.M. to 12:30 P.M.", "Lunch", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Set Free Ministries" ]
+, [ 19, "6173BDAE-9A48-4E59-8DC3-8C95F4B6333E", 19, 1272557492, "387346", 1272557492, "387346", null, "Tuesdays: 11:00 A.M. - 1:00 P.M.", "Lunch", "Primarily low-income Samoan seniors", "3204 SW Holly St., Seattle (Holly Park Comm. Center)", "Samoana Senior Club" ]
+, [ 20, "954B76FB-7786-4DB1-B095-6C79AF4A6868", 20, 1272557492, "387346", 1272557492, "387346", null, "Fridays: 11:00 A.M. - 1:00 P.M.", "Lunch", "Primarily low-income Tongan & PI Seniors", "2801 SW Thistle Street, Seattle", "Friendly Island of Tonga Seniors" ]
+, [ 21, "C08992F4-5EE5-417F-935C-9F415EC598AA", 21, 1272557492, "387346", 1272557492, "387346", null, "Daily  1st seating: 11:30 A.M. -12:00 P.M., 2nd seating: 12:30-1:00 P.M.", "Lunch", "WOMEN 18 AND OLDER", "2030 3rd Ave, Seattle", "YWCA Angeline's Meals Program" ]
+, [ 22, "2650EF74-F8E5-4A58-BB8B-935AD2E6EAE7", 22, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: 11:30 A.M.. - 12:30 P.M.", "Lunch", "OPEN TO AGES 60+", "409 Maynard Ave South, Seattle", "Legacy House Nutrition Program" ]
+, [ 23, "E26D829A-6AE3-4B9F-861A-C219E6F3EEF4", 23, 1272557492, "387346", 1272557492, "387346", null, "Tuesday and Friday 11:30 A.M. - 12:30 P.M.", "Lunch", "OPEN TO ALL", "3639 Martin Luther King Way, Seattle ", "Emergency Senior Nutrition Program" ]
+, [ 24, "0E0C0354-1EC0-4174-92DF-F3B00C00B9C8", 24, 1272557492, "387346", 1272557492, "387346", null, "Fridays: 11:30 A.M. - 12:30 P.M.", "Lunch", "OPEN TO ALL", "5710 22nd Ave. NW  Seattle", "Saint Luke's Episcopal Church" ]
+, [ 25, "5A1ACB49-DE28-4675-96BA-6A0D00E22A1D", 25, 1272557492, "387346", 1272557492, "387346", null, "Tuesdays: 11:30 A.M.", "Lunch", "OPEN TO ALL", "8201 10th Ave South, Seattle", "Latino Lunch" ]
+, [ 26, "EE9340EE-7553-4BA4-99B9-0D1D3F08FACB", 26, 1272557492, "387346", 1272557492, "387346", null, "Wednesday & Friday: 11:30 A.M.", "Lunch", "OPEN TO ALL", "8201 10th Ave South, Seattle", "PAEP/Polynesian Nutrition Program" ]
+, [ 27, "145F163F-8E60-47F4-AFC9-DDA1EAAB61F6", 27, 1272557492, "387346", 1272557492, "387346", null, "Tuesdays & Fridays: 11:30 A.M. - 1:00 P.M.", "Lunch", "Primarily low-income Samoans", "330 19th Ave, Seattle", "ACRS/Korean Senior Club" ]
+, [ 28, "9A7E2D13-D8AF-494C-A478-95C2EFADC81A", 28, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: 12:00 - 12:45 P.M.", "Lunch", "OPEN TO ALL/ Must be sober", "611 12th Ave South, Suite 300, Seattle", "Seattle Indian Center" ]
+, [ 29, "A25DE6F0-B5D6-4284-88E9-764D5F68C5F7", 29, 1272557492, "387346", 1272557492, "387346", null, "Chapel required prior to meal service.  Please arrive between 11:00 - 11:30 A.M., chapel begins at 11:30 A.M., meal is served at 12:00 P.M.", "Lunch", "OPEN TO ALL", "318 2nd Ave. S. Extension,  Seattle", "Union Gospel Mission" ]
+, [ 30, "5D4A0AE3-259C-4401-A391-AD2EADBC8BF6", 30, 1272557492, "387346", 1272557492, "387346", null, "Thursdays: 12:00 - 1:00 P.M.", "Lunch", "OPEN TO ALL", "31957 E. Commercial Street, Carnation", "Hopelink/Sno-Valley" ]
+, [ 31, "FDB6DB4A-EE7D-456D-AB21-C5F7AFDEA509", 31, 1272557492, "387346", 1272557492, "387346", null, "Daily: 12:00 P.M. (Closed 1st Wednesday of each month)", "Lunch", "OPEN TO 55+ ", "85 Pike St.  Suite 200,  Seattle", "Pike Market Senior Center" ]
+, [ 32, "B125A001-30D5-446F-BA6E-92C382964A2F", 32, 1272557492, "387346", 1272557492, "387346", null, "Daily: 12:00  - 2:00 P.M.", "Lunch", "OPEN TO 50+", "416 Second Ave Extension South, Seattle", "Lazurus Day Center" ]
+, [ 33, "BBDCBD58-5924-48F5-ABD7-17E5CFF0E29D", 33, 1272557492, "387346", 1272557492, "387346", null, "Every Saturday : 12:00 - 1:00 P.M.", "Lunch", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Bible Study Out Reach Ministries" ]
+, [ 34, "14ED8EDC-384C-4115-AB2F-4529C4E17138", 34, 1272557492, "387346", 1272557492, "387346", null, "Every Sunday 12:00 - 2:00 P.M.", "Lunch", "OPEN TO ALL", "5050 8th Ave. NE,  Seattle", "Blessed Sacrament Church Sunday Dinner " ]
+, [ 35, "36DD49FC-33DC-4718-9F85-9DB1C826B53F", 35, 1272557492, "387346", 1272557492, "387346", null, "Mon, Wed, Thurs, Friday - Sack Lunch 12 P.M., Tue - 12:30 P.M. (Hot Lunch)", "Lunch", "OPEN TO ALL", "97 South Main St.,  Seattle", "Bread of Life Mission" ]
+, [ 36, "F5413CE9-A2BB-4406-86A1-07BFB29944D1", 36, 1272557492, "387346", 1272557492, "387346", null, "Tuesday & Friday: 12:00 P.M. (noon)", "Lunch", "OPEN TO ALL", "1710 11th Ave., Seattle", "Community Lunch on Capitol Hill" ]
+, [ 37, "D14600C8-95A8-4FB2-BAF3-9E85DA95B453", 37, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: 12:00 - 1:00 P.M.", "Lunch", "OPEN TO ALL", "2524 16th Ave. S, Seattle", "El Centro de La Raza" ]
+, [ 38, "A62433E4-3309-460F-B91A-20060337C53E", 38, 1272557492, "387346", 1272557492, "387346", null, "Last Sunday of each month: 12:00 - 2:00 P.M.", "Lunch", "OPEN TO ALL", "1215 Thomas St., Seattle", "Community Lunch / Immanuel Community Services" ]
+, [ 39, "88170AE0-D786-4B10-AEA6-73F92D7FD3F5", 39, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: 12:00 - 1:30 P.M.", "Lunch", "OPEN TO ALL", "2515 Western Ave.,  Seattle", "Millionair Club Charity" ]
+, [ 40, "BDDCB166-2788-4D30-BFC7-12A807ABA51A", 40, 1272557492, "387346", 1272557492, "387346", null, "Mondays: 12:00 - 1:00 P.M.", "Lunch", "OPEN TO ALL", "Calvary Lutheran 7002 23rd Ave NW, Seattle", "Phinney Neighborhood Association" ]
+, [ 41, "B7B3623F-860C-4933-AC8D-362BA4A1E78D", 41, 1272557492, "387346", 1272557492, "387346", null, "Wednesdays: 12:00 - 1:00 P.M.", "Lunch", "OPEN TO ALL", "St. John's Lutheran 5515 Phinney Ave N., Seattle", "Phinney Neighborhood Association" ]
+, [ 42, "FC928093-B80F-4511-95CC-ACD9C45AD7A2", 42, 1272557492, "387346", 1272557492, "387346", null, "3rd Sunday: 12:00 - 1:00 P.M.", "Lunch", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Anonymous Acts of Kindness" ]
+, [ 43, "07329213-B01C-4571-A502-BE405E06C005", 43, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: 12:30 - 1:00 P.M.", "Lunch", "Youth 13-21", "1828 Yale Avenue (on the corner of Denny and Stewart)", "Youth Care's Orion Center" ]
+, [ 44, "4AC0A0F4-0CC2-4806-A412-6F4CC1B2112A", 44, 1272557492, "387346", 1272557492, "387346", null, "Mondays: 12:30  - 1:00 P.M.", "Lunch", "OPEN TO ALL", "Woodland Park Pres. Church 225 N. 70th, Seattle", "Monday Feeding Program" ]
+, [ 45, "8FA5BB16-CDB5-4371-9CAD-4B1468A1AA43", 45, 1272557492, "387346", 1272557492, "387346", null, "Tuesday & Thursday: 12:30 P.M.", "Lunch", "OPEN TO ALL", "5740 MLK Jr. Way South, Seattle", "PAEP/Filipino Senior Services" ]
+, [ 46, "F15509D7-BA39-485A-9609-E1C911F1AD9A", 46, 1272557492, "387346", 1272557492, "387346", null, "Tuesday & Friday; 12:30 P.M.", "Lunch", "OPEN TO ALL", "6721 51st Ave South, Seattle", "PAEP/Laotian & H'mong Senior Srvcs." ]
+, [ 47, "D44A5364-79A0-4C04-B92B-4B0CC06BB4B9", 47, 1272557492, "387346", 1272557492, "387346", null, "Monday - Saturday: 12:30 P.M.", "Lunch", "OPEN TO WOMEN & CHILDREN ONLY", "210 Dexter Avenue, Seattle", "Mary's Place / Church of Mary Magdalene" ]
+, [ 48, "0303626C-0A30-45A1-87A1-D962E094100E", 48, 1272557492, "387346", 1272557492, "387346", null, "Tuesday - Saturday: 12:30 - 2:30 P.M. (Must be sober 24 hours, must become member after 1st meal)", "Lunch", "OPEN TO ALL", "2022 Boren Avenue, Seattle", "Recovery Café" ]
+, [ 49, "BB2B5961-3170-4B53-9B2C-9543EB22234C", 49, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: Lunch 1:00 - 2:00 P.M.", "Lunch", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Operation Sack Lunch" ]
+, [ 50, "27ECE959-4BB6-42F5-9279-032CE3471CCB", 50, 1272557492, "387346", 1272557492, "387346", null, "1st, 2nd, and 4th Sunday: 1:00 - 2:00 P.M.  ", "Lunch", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle ", "Anonymous Acts of Kindness" ]
+, [ 51, "1498AEB2-5373-441C-BEC2-588760FB3B95", 51, 1272557492, "387346", 1272557492, "387346", null, "Monday - Thursday: 1:15  - 3:45 P.M.", "Lunch", "Youth 12 - 22", "4516 15th Ave NE, Seattle", "U-District Youth Center" ]
+, [ 52, "77652CB8-2EA8-4125-A16D-A446261466BF", 52, 1272557492, "387346", 1272557492, "387346", null, "Last Sunday of every month: 2:00 P.M.", "Lunch", "OPEN TO ALL", "111 NE 80th St.  Seattle", "Saint Andrew's Episcopal Church Jubilee Dinners" ]
+, [ 53, "E4FACCA5-4DC6-4FF1-9398-450496002428", 53, 1272557492, "387346", 1272557492, "387346", null, "4th Saturday: 2:00 - 3:30 P.M.", "Lunch", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Restoration Life Church" ]
+, [ 54, "E8BFABBF-D3A0-40AF-98D9-3227786A8088", 54, 1272557492, "387346", 1272557492, "387346", null, "3rd Sunday: 2:00 - 3:30 P.M.", "Lunch", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Curry Temple" ]
+, [ 55, "6D8F8F2B-60F3-41CB-922A-A9408F0D41EE", 55, 1272557492, "387346", 1272557492, "387346", null, "2nd Saturday: 1:00 - 2: 00 P.M.", "Snack", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Seeds of Abraham Pentecostal Church" ]
+, [ 56, "C6626485-6DAC-413E-AD5B-B16DBCA1AD95", 56, 1272557492, "387346", 1272557492, "387346", null, "Daily: 3:00 - 3:30 P.M. ", "Snack", "WOMEN 18 AND OLDER", "2030 3rd Ave, Seattle", "YWCA Angeline's Meals Program" ]
+, [ 57, "98CB28D4-12D1-40B3-B1F6-E64C96BCF378", 57, 1272557492, "387346", 1272557492, "387346", null, "2nd Saturday: 3:00 - 4:30 P.M.", "Dinner", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Neighborhood Cooking Foundation" ]
+, [ 58, "1BDB6003-6F5C-4B9C-B09A-39088998875E", 58, 1272557492, "387346", 1272557492, "387346", null, "1st, 3rd and 5th Saturday: 4:00 - 5:30 P.M.", "Dinner", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Mount Zion Baptist Church / Street Feeding Ministry" ]
+, [ 59, "5FAE1F43-3022-45E0-BB73-742EB36F08AB", 59, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: 4:30 - 5:00 P.M.", "Dinner", "Women, Children, Families, Men 55+", "803 Terry Ave., Seattle", "Cathedral Kitchen" ]
+, [ 60, "34C0026F-24B6-436A-998D-44C93565F175", 60, 1272557492, "387346", 1272557492, "387346", null, "Mondays: 4:30 - 5:15 P.M.", "Dinner", "OPEN TO ALL", "100 N street SE, Auburn", "Auburn Community Supper" ]
+, [ 61, "50019DB7-6D92-482E-B852-DBA22FE2AAD1", 61, 1272557492, "387346", 1272557492, "387346", null, "Tuesdays: 5:00 - 6:00 P.M.", "Dinner", "OPEN TO ALL", "St. John's Lutheran 5515 Phinney Ave N., Seattle", "Phinney Neighborhood Association" ]
+, [ 62, "6E2B2617-68CC-408E-A61F-D35E37B86F72", 62, 1272557492, "387346", 1272557492, "387346", null, "Tuesday - Saturday: 5:15 - 6:00 P.M. (Must be sober 24 hours, must attend at least 1 recovery focused meeting per week)", "Dinner", "OPEN TO ALL", "2022 Boren Avenue, Seattle", "Recovery Café" ]
+, [ 63, "437FD27A-4DC5-4BA4-BD5C-91334A793C03", 63, 1272557492, "387346", 1272557492, "387346", null, "Monday & Fridays: 5:30 P.M.", "Dinner", "OPEN TO ALL", "8201 10th Ave South, Seattle", "South Park Senior Meals" ]
+, [ 64, "5797C5ED-B417-4700-A5D5-35E7B20A1B0A", 64, 1272557492, "387346", 1272557492, "387346", null, "Daily: 5:30 - 6:30 P.M. (No chapel requirement unless staying as a overnight guest)", "Dinner", "OPEN TO ALL", "318 2nd Ave. S. Extension,  Seattle", "Union Gospel Mission" ]
+, [ 65, "1AB80390-BFBD-4C36-8CA8-0D5B127C94B9", 65, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: 6:00 - 6:30 P.M.", "Dinner", "Youth 13-21", "1828 Yale Avenue (on the corner of Denny and Stewart)", "Youth Care's Orion Center" ]
+, [ 66, "D9DB0A28-6E62-4588-AD09-875278145B3C", 66, 1272557492, "387346", 1272557492, "387346", null, "Fridays: 6:00 - 7:00 P.M.", "Dinner", "OPEN TO ALL", "1415 NE 43rd Street, Seattle (alley entrance)", "Friday Feast: ROOTS" ]
+, [ 67, "2C18CC1C-1EB9-427F-93F1-122BFA2D4506", 67, 1272557492, "387346", 1272557492, "387346", null, "Sundays: 6:00 - 7:00 P.M.; Monday through Wednesday: 7:00 - 8:00 P.M.", "Dinner", "YOUTH 22 OR YOUNGER ", "2709 3rd Ave., Seattle", "New Horizons Ministries" ]
+, [ 68, "6F9E20E6-C74F-421B-AB48-2BEF8E859D7E", 68, 1272557492, "387346", 1272557492, "387346", null, "Daily: 6:30 P.M.", "Dinner", "OPEN TO MEN 50+ ", "1561 Alaskan Way S., Seattle", "Saint Martin's de Porres Shelter" ]
+, [ 69, "1E8ABA4A-3BBA-4D16-9102-4BE6054D038E", 69, 1272557492, "387346", 1272557492, "387346", null, "1st Sunday of each month 6:00 - 7:00 P.M.", "Dinner", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Neighborhood Cooking Foundation" ]
+, [ 70, "6719CD3A-3C0B-402D-8015-BE989946BC0C", 70, 1272557492, "387346", 1272557492, "387346", null, "4th Saturday: 6:30 - 8:30 P.M.", "Dinner", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Snoqualmie Valley Alliance Church" ]
+, [ 71, "CEAD7C45-2F9C-4033-A66B-93096133A77A", 71, 1272557492, "387346", 1272557492, "387346", null, "Everyday:  Dinner Intake at 5:45 P.M.  (Required chapel attendance before meal at 8pm)", "Dinner", "OPEN TO ALL", "97 South Main St.,  Seattle", "Bread of Life Mission" ]
+, [ 72, "6A7D0923-13CC-4260-9392-A83313E42828", 72, 1272557492, "387346", 1272557492, "387346", null, "Mondays: 7:00 - 8:00 P.M.", "Dinner", "Youth 13-25", "University Lutheran Church, N.E. 50th & 16th N.E., Seattle (Enter down the steps off 16th & 50th)", "University Street Ministry Teen Feed" ]
+, [ 73, "AE0357B1-08EE-452A-823F-8AD05CDA9D54", 73, 1272557492, "387346", 1272557492, "387346", null, "Tuesdays: 7:00 - 8:00 P.M.", "Dinner", "Youth 13-25", "University Methodist,N.E. 43rd & 15th N.E., Seattle (Enter via alley, southwest corner of the bldg)", "University Street Ministry Teen Feed" ]
+, [ 74, "27672E46-4B6F-4925-97F6-E3D7DEAF3184", 74, 1272557492, "387346", 1272557492, "387346", null, "Wednesday & Thursday: 7:00 - 8:00 P.M.", "Dinner", "Youth 13-25", "University Congregational     N.E. 45th & 16th N.E., Seattle (Down the seps off 16th)", "University Street Ministry Teen Feed" ]
+, [ 75, "4A2DC6CF-DE12-4188-9297-B7B83C59535F", 75, 1272557492, "387346", 1272557492, "387346", null, "Fridays & Sundays: 7:00 - 8:00 P.M. (Enter via alley, SW corner of building)", "Dinner", "Youth 13-25", "University Christian                  N.E. 50th & 15th N.E., Seattle", "University Street Ministry Teen Feed" ]
+, [ 76, "E297957F-F726-422C-9A9E-5DD6D61CAA5D", 76, 1272557492, "387346", 1272557492, "387346", null, "Monday - Thursday: 7:30 - 9:00 P.M.", "Dinner", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Lord's Table" ]
+, [ 77, "279C2727-0505-483A-BCC0-570DBEB5A5A6", 77, 1272557492, "387346", 1272557492, "387346", null, "Daily: 6:00 - 7:15 pm", "Dinner", "WOMEN 18 AND OLDER", "2030 3rd Ave, Seattle", "Women's Referral Center" ]
+, [ 78, "A24FB6D3-D41B-4977-8765-CD5FD312ED8C", 78, 1272557492, "387346", 1272557492, "387346", null, "Major Holidays Only, Thanksgiving, Christmas, New Years day.", "Dinner", "OPEN TO ALL", "Outdoor Meal Site at 6th and Columbia, Seattle", "Friends of Francois" ]
+ ]
+}
