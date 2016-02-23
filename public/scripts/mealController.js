@@ -1,21 +1,21 @@
 (function(module){
  var mealController = {};
 
- // Meal.createTable();
+ Meal.createTable();
 
-mealController.index = function(ctx, next){
-  mealView.index(ctx.articles);
+mealController.index = function(){
+  Meal.fetchAll(mealView.initIndexPage);
 };
 
-mealControler.loadByMealType = funciton(ctx, next){
+mealController.loadByMealType = function(ctx, next){
   var mealData = function(meal){
     ctx.articles = meal;
     next();
   };
-  Article.findWhere('x', ctx.params.id, mealData);
+  mealData.findWhere('x', ctx.params.id, mealData);
 }
 
 
 
-
-})
+ module.mealController = mealController;
+})(window);
