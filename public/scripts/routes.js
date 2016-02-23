@@ -1,7 +1,7 @@
 // page('/', homeController.index);
 //
 // page('/finder', finderController.index );
-// page('/resources', resourcesController.index);
+page('/resources', resourcesController.index);
 page('/about', aboutController.index);
 
 page();
