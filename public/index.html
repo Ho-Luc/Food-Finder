@@ -17,39 +17,39 @@
 
     <nav class="main-nav">
       <ul>
-        <li class="tab" data-content=""><a href="/">Finder<a/></li>
+        <li class="tab" data-content=""><a href="/">Home<a/></li>
         <li class="tab" data-content=""><a href="/finder">Finder</a></li>
         <li class="tab" data-content=""><a href="/resources">Resources</a></li>
         <li class="tab" data-content=""><a href="/about">About</a></li>
       <ul>
     </nav>
+    <main>
+      <section id="home" class="tab-content">
+        <h2>First Section, ID of "home". Our Home Page Content, Goes Here</h2>
+      </section>
 
-    <section id="home" class="tab-content">
-      <h2>First Section, ID of "home". Our Home Page Content, Goes Here</h2>
-    </section>
+      <section id="finder" class="tab-content">
+        <h2> Second Section, ID of "finder". Our Food Finder Search Bar, Map, and Content Goes Here</h2>
+        <div>
+          <ul id="filters">
+            <li>
+              <select id="mealtype-filter">
+                <option value="">--Filter by Meal--</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div id="map"></div>
+      </section>
 
-    <section id="finder" class="tab-content">
-      <h2> Second Section, ID of "finder". Our Food Finder Search Bar, Map, and Content Goes Here</h2>
-      <div>
-        <ul id="filters">
-          <li>
-            <select id="mealtype-filter">
-              <option value="">--Filter by Meal--</option>
-            </select>
-          </li>
-        </ul>
-      </div>
-      <div id="map"></div>
-    </section>
+      <section id="resources" class="tab-content">
+        <h2>Third Section, ID of "resources". Our Resources Data Goes Here!</h2>
+      </section>
 
-    <section id="resources" class="tab-content">
-      <h2>Third Section, ID of "resources". Our Resources Data Goes Here!</h2>
-    </section>
-
-    <section id="about" class="tab-content">
-      <h2>Fourth Section, ID of "about". Our About Us Content Goes Here!</h2>
-    </section>
-  
+      <section id="about" class="tab-content">
+        <h2>Fourth Section, ID of "about". Our About Us Content Goes Here!</h2>
+      </section>
+    </main>
 
 
     <!-- CDNs -->
@@ -59,11 +59,15 @@
     <script src="/vendor/scripts/html5sql.js"></script>
     <script src="/vendor/scripts/webdb.js"></script>
     <script src="/vendor/scripts/page.js"></script>
+    <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9Pjx18wRYcL0GqoAjlM7H4txb88Qr-n8&callback=googleMap.initMap">
+   </script>
     <!-- our scripts -->
-    <script src ="/scripts/mealData.js"></script>
+    <script src="/scripts/maps.js"></script>
+    <script src="/scripts/mealData.js"></script>
+    <script src="/scripts/resourcesController.js"></script>
     <script src="/scripts/aboutController.js"></script>
+
     <script src="/scripts/routes.js"></script>
-
-
   </body>
 </html>

@@ -1,4 +1,5 @@
-(function(module){
+(function(module) {
+  
   var aboutController = {};
 
     aboutController.index = function() {
