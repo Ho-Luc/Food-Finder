@@ -1,3 +1,5 @@
+(function(module) {
+
 
   var render = function(article){
   // handlebar template script if necessary.

@@ -473,7 +473,7 @@
       "flags" : [ "default" ]
     }
   },
-  "data" : [ [ 2, "A70FF4AB-72C0-417A-B851-76091BB29EE3", 2, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: 6:15 - 7:00 A.M.", "Breakfast", "OPEN TO ALL", "2515 Western Ave.,  Seattle", "Millionair Club Charity" ]
+  "mealData" : [ [ 2, "A70FF4AB-72C0-417A-B851-76091BB29EE3", 2, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday: 6:15 - 7:00 A.M.", "Breakfast", "OPEN TO ALL", "2515 Western Ave.,  Seattle", "Millionair Club Charity" ]
 , [ 3, "D8821C33-BED7-4AF8-9F3E-0416F841A65E", 3, 1272557492, "387346", 1272557492, "387346", null, "Sunday - Thursday 5:30 - 8:30 A.M.", "Breakfast", "OPEN TO ALL", "8201 10th Ave S., Seattle", "South Park Breakfast Bunch" ]
 , [ 4, "9EBCA58F-3410-4EC4-8C61-CF31877338BB", 4, 1272557492, "387346", 1272557492, "387346", null, "Monday - Friday 7:00 - 9:30 A.M.", "Breakfast", "AMERICAN INDIANS ONLY", "410 2nd Ave. Extension So., Seattle", "Chief Seattle Club" ]
 , [ 5, "E40AADFA-28B4-4FEC-8E5D-4FBE6E4CD1EF", 5, 1272557492, "387346", 1272557492, "387346", null, "Chapel required prior to meal service.  There are 3 daily Chapel services to choose from: 7-7:30 A.M., 7:45-8:15 A.M., 8:30-9 A.M.  (Meal served following each service.)", "Breakfast", "OPEN TO ALL", "318 2nd Ave. S. Extension,  Seattle", "Union Gospel Mission" ]
