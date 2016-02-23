@@ -1,13 +1,40 @@
 (function(module) {
 
-var rawData = this.data;
+var mealArray = this.data;
 
-function Meal () {
-var mealServed = this.data;
 
-};
+//populate meal type from array
+var mealType = []
+data.forEach(function(ele) {
+mealType.push(ele[9])
+});
+//populate address from array
+var address = []
+data.forEach(function(ele) {
+address.push(ele[11])
+});
 
-Meal.all = [];
+//populate people served from array
+var peopleServed = []
+data.forEach(function(ele) {
+peopleServed.push(ele[10])
+});
+
+//populate times opened from array
+var timesOpen = []
+data.forEach(function(ele) {
+timesOpen.push(ele[8])
+});
+
+//populate program name from array
+var programName = []
+data.forEach(function(ele) {
+programName.push(ele[12])
+});
+
+
+
+// Meal.all = [];
 
 // Set up a DB table for articles.
 // Meal.createTable = function(callback) {
@@ -20,12 +47,16 @@ Meal.all = [];
 //   )
 // }
 
-function isMealType(value) {
-  return this.data[9];
 
-  data.reduce(function(previousValue, currentValue, currentIndex, array) {
-  return previousValue + currentValue;
-}, 10);
+//meal type
+Meal.mealType = function () {
+  return Meal.all.map(function(meal) {
+    return meal.mealServed;
+  });
+
+//   data.reduce(function(previousValue, currentValue, currentIndex, array) {
+//   return previousValue + currentValue;
+// }, 10);
 }
 var filtered = this.data.filter(isMealType);
 
