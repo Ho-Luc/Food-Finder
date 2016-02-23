@@ -5,10 +5,10 @@ function loadYelpSearch(req, res) {
     var foodBanks = {};
     foodBanks.all = [];
     var yelp = new Yelp({
-        consumer_key: 'dVH3imXJeAlRaAD6cbphoQ',
-        consumer_secret: 'TJvAkxhIkFgccCRTdc_57h7Hlhw',
-        token: 'ZVolrF0alQEkhpimxOWzYAcgqCrCxc1j',
-        token_secret: 'eV_RwX15bxPaGcYJGBOZ64N144U',
+        consumer_key: '',
+        consumer_secret: '',
+        token: '',
+        token_secret: '',
   });
 
     var url_parts = url.parse(req.url, true);
