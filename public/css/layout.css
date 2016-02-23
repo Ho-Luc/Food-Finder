@@ -1,0 +1,42 @@
+
+body{
+    background-image: url("http://www.lightcapturephoto.com/media/original/Seattle-Skyline-Mount-Rainier.jpg");
+    font-family: 'Cantarell', sans-serif;
+}
+header{
+  height:500px;
+  background-color: rgba(
+165,18,18,.25);
+/*   position: fixed; */
+}
+
+h1{
+    font-size:5em;
+  color:white;
+}
+
+h3{
+    font-size:3em;
+  color:white;
+}
+
+.tab{
+  display:inline-block;
+  float:right;
+position:relative;
+  margin-right:8px;
+}
+
+a{
+   text-decoration: none;
+    color:white;
+    font-size:1.25em;
+}
+
+#mealtype-filter{
+  height:30px;
+  width:150px;
+  color:white;
+  background-color:rgba(85,98,112,.5);
+  font-size:1em;
+}
