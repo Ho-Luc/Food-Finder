@@ -2,6 +2,9 @@
 
 var mealArray = this.data;
 
+function Meal () {
+
+}
 
 //populate meal type from array
 var mealType = []
@@ -49,52 +52,52 @@ programName.push(ele[12])
 
 
 //meal type
-Meal.mealType = function () {
-  return Meal.all.map(function(meal) {
-    return meal.mealServed;
-  });
+// Meal.mealType = function () {
+//   return Meal.all.map(function(meal) {
+//     return meal.mealServed;
+//   });
 
 //   data.reduce(function(previousValue, currentValue, currentIndex, array) {
 //   return previousValue + currentValue;
 // }, 10);
-}
-var filtered = this.data.filter(isMealType);
-
-Meal.loadAll = function(rawData) {
-  rawData.forEach(function(ele) {
-    Meal.all.push(new Meal(ele));
-  });
-};
-
-
-Meal.fetchAll = function(next) {
-  webDB.execute('SELECT * FROM meal ', function(rows) {
-      $.getJSON('/data/mealData.json', function(rawData) {
-        // Cache the json, so we don't need to request it next time:
-        rawData.forEach(function(item) {
-          var meal = new Meal(item); // Instantiate an article based on item from JSON
-          meal.insertRecord();// Cache the newly-instantiated article in DB:
-        });
-        // Now get ALL the records out the DB, with their database IDs:
-        webDB.execute('SELECT * FROM data', function(rows) {
-          // Now instanitate those rows with the .loadAll function, and pass control to the view.
-          meal.loadAll(rows);
-          next();
-        });
-      }
-    };
-  };
-
-
-
-
-
-
-
-
-
-
-
+// }
+// var filtered = this.data.filter(isMealType);
+//
+// Meal.loadAll = function(rawData) {
+//   rawData.forEach(function(ele) {
+//     Meal.all.push(new Meal(ele));
+//   });
+// };
+//
+//
+// Meal.fetchAll = function(next) {
+//   webDB.execute('SELECT * FROM meal ', function(rows) {
+//       $.getJSON('/data/mealData.json', function(rawData) {
+//         // Cache the json, so we don't need to request it next time:
+//         rawData.forEach(function(item) {
+//           var meal = new Meal(item); // Instantiate an article based on item from JSON
+//           meal.insertRecord();// Cache the newly-instantiated article in DB:
+//         });
+//         // Now get ALL the records out the DB, with their database IDs:
+//         webDB.execute('SELECT * FROM data', function(rows) {
+//           // Now instanitate those rows with the .loadAll function, and pass control to the view.
+//           meal.loadAll(rows);
+//           next();
+//         });
+//       }
+//     };
+//   };
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
   module.Meals = Meals;
 })(window);
