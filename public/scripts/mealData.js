@@ -1,7 +1,6 @@
 (function(module) {
 
-// this.data;
-  var mealType = [];
+
 
 function Meal (opts) {
   this.mealType = opts.mealType;
@@ -71,7 +70,7 @@ Meal.createTable = function(callback) {
     );
   };
 
-  // DONE: Correct the SQL to delete all records from the meals table.
+  // Correct the SQL to delete all records from the meals table.
   Meal.truncateTable = function(callback) {
   webDB.execute(
     'DELETE FROM meals;',
@@ -81,7 +80,7 @@ Meal.createTable = function(callback) {
     }
   );
 };
-// DONE: Insert a meal instance into the database:
+// Insert a meal instance into the database:
   Meal.prototype.insertRecord = function(callback) {
     webDB.execute(
       [
@@ -96,7 +95,7 @@ Meal.createTable = function(callback) {
     );
   };
 
-  // DONE: Delete a meal instance from the database:
+  //  Delete a meal instance from the database:
     Meal.prototype.deleteRecord = function(callback) {
     webDB.execute(
       [
@@ -126,8 +125,6 @@ Meal.createTable = function(callback) {
       }
     );
   };
-
-
   Meal.fetchAll = function(next) {
     webDB.execute('SELECT * FROM meals ', function(rows) {
       $.getJSON('/data/mealData.json', function(rawData) {
@@ -144,27 +141,12 @@ Meal.createTable = function(callback) {
         });
       });
     }
-  // })
-}
+  }
 Meal.allMealTypes = function() {
   return Meal.all.map(function(meal) {
     return meal.mealType;
   })
-
-
-  });
-
-
-
-
-
-
-
-
-
-
-
-
+};
 
 
   module.Meal = Meal;
