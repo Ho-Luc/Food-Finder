@@ -69,6 +69,9 @@ $('#filters').one('change', 'select', function(){
   mealView.index = function(articles){
     //initiate page/dom queries and call populateFilters and handleFilters; DOM manipulation to be decided based on future Index.html scaffolding. The following calls are commented out until their corresponding methods are completed.
 
+    $('#resources').hide();
+    $('#about').hide();
+
     // mealView.populateFilters();
     // mealView.handleFilters();
 
