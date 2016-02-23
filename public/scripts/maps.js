@@ -10,5 +10,6 @@
     });
   };
 
+
   module.googleMap = googleMap;
 })(window);
