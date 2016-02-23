@@ -11,23 +11,58 @@
     <!--handlebars script tag here-->
   </head>
   <body>
-    <div id=map></div>
-    <p>
-      hi ssdgfdsgfdsg
-    </p>
-    <!-- Note: the script files aren't currently in order. 10:13am 2/22 -->
+    <header class="site-header">
+      <h1>Seattle Food Bank and Meal Program Finder<h1>
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li class="tab" data-content=""><a href="/">Finder<a/></li>
+        <li class="tab" data-content=""><a href="/finder">Finder</a></li>
+        <li class="tab" data-content=""><a href="/resources">Resources</a></li>
+        <li class="tab" data-content=""><a href="/about">About</a></li>
+      <ul>
+    </nav>
+
+    <section id="home" class="tab-content">
+      <h2>First Section, ID of "home". Our Home Page Content, Goes Here</h2>
+    </section>
+
+    <section id="finder" class="tab-content">
+      <h2> Second Section, ID of "finder". Our Food Finder Search Bar, Map, and Content Goes Here</h2>
+      <div>
+        <ul id="filters">
+          <li>
+            <select id="mealtype-filter">
+              <option value="">--Filter by Meal--</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <div id="map"></div>
+    </section>
+
+    <section id="resources" class="tab-content">
+      <h2>Third Section, ID of "resources". Our Resources Data Goes Here!</h2>
+    </section>
+
+    <section id="about" class="tab-content">
+      <h2>Fourth Section, ID of "about". Our About Us Content Goes Here!</h2>
+    </section>
+
 
 
     <!-- CDNs -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-
+    <!-- more vendor scripts  -->
     <script src="/vendor/scripts/html5sql.js"></script>
     <script src="/vendor/scripts/webdb.js"></script>
     <script src="/vendor/scripts/page.js"></script>
-    <!-- <script src ="../public/data/mealData.json"></script> -->
+
     <script src = "/scripts/mealData.js"></script>
     <script src="/scripts/routes.js"></script>
+
 
   </body>
 </html>

@@ -47,7 +47,7 @@ Meal.all = [];
 
 
 Meal.prototype.toHtml = function() {
-  var template = Handlebars.compile($('#mealprogram-template').text());
+  var template = Handlebars.compile($('#mealtype-filter').text());
   return template(this);
 };
 
