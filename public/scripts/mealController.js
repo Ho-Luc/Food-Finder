@@ -3,17 +3,17 @@
 
  Meal.createTable();
 
-mealController.index = function(){
-  Meal.fetchAll(mealView.initIndexPage);
+mealController.index = function(ctx, next){
+ mealView.index(ctx.mealz);
 };
 
-// mealController.loadByMealType = function(ctx, next){
-//   var mealData = function(meal){
-//     ctx.articles = meal;
-//     next();
-//   };
-//   mealData.findWhere('x', ctx.params.id, mealData);
-// }
+mealController.loadByMealType = function(ctx, next){
+  var mealData = function(meal){
+    ctx.mealz = meal;
+    next();
+  };
+  mealData.findWhere('id', ctx.params.id, mealData);
+}
 
 
  module.mealController = mealController;

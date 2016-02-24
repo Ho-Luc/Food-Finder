@@ -30,17 +30,8 @@ var render = function(article) {
        });
      };
 
-  mealView.create = function() {
-    var article;
-    $('#finder').empty();
-
-    article = new Meal({
-      mealType: opts.mealType;
-      address: opts.address;
-      peopleServed: opts.peopleServed;
-      timesOpen: opts.timesOpen;
-      programName: opts.programName;
-    })
+  mealView.index= function(mealz) {
+    $('#finder').show().siblings().hide();
   }
 
   mealView.initIndexPage = function() {

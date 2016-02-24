@@ -1,4 +1,4 @@
-(function(module) {
+// (function(module) {
 
  function Meal (opts) {
    this.mealType = opts.mealType;
@@ -9,12 +9,18 @@
    this.id = opts.id;
  }
 
+// function Meal (opts) {
+//   Object.keys(ops).forEach(function(e, index, keys) {
+//     this[e] = opts[e];
+//   }, this);
+// }
+
    Meal.all = [];
-   var mealType = [];
-   var address = []
-   var peopleServed = []
-   var timesOpen = []
-   var programName = []
+  //  var mealType = [];
+  //  var address = []
+  //  var peopleServed = []
+  //  var timesOpen = []
+  //  var programName = []
 
 
 Meal.prototype.toHtml = function() {
@@ -33,10 +39,7 @@ Meal.createTable = function(callback) {
     'peopleServed VARCHAR(255) NOT NULL, ' +
     'programName VARCHAR(255) NOT NULL ' +
     ');',
-    function(result) {
-        console.log('Successfully set up the finder table.', result);
-        if (callback) callback();
-      }
+    callback
     );
   };
 
@@ -95,43 +98,27 @@ Meal.createTable = function(callback) {
     });
   };
 
-  Meal.fetchAll = function(next) {
+  Meal.fetchAll = function(callback) {
     webDB.execute('SELECT * FROM finder', function(rows) {
-        if (rows.length) {
-          Meal.loadAll(rows);
-          next();
-        } else {
-          $.getJSON('public/data/mealData.json', function(rawData) {
-            console.log(rawData);
-              rawData.forEach(function(ele) {
-                mealType.push(ele[9])
-              });
+      // if (rows.length) {
+      //   Meal.loadAll(rows);
+      //   callback();
+      // } else {
+        $.getJSON('data/mealData.json', function(rawData) {
+          console.log(rawData.length);
 
-              rawData.forEach(function(ele) {
-                address.push(ele[11])
-              });
-              //populate people served from array
-              rawData.forEach(function(ele) {
-                peopleServed.push(ele[10])
-              });
-              //populate times opened from array
-              mealData.forEach(function(ele) {
-                timesOpen.push(ele[8])
-              });
-              //populate program name from array
-              mealData.forEach(function(ele) {
-                programName.push(ele[12])
-              });
-              var meal = new Meal(item);
-              meal.insertRecord();
-            webDB.execute('SELECT * FROM finder', function(rows) {
-          // Now instanitate those rows with the .loadAll function, and pass control to the view.
+          rawData.forEach(function(yumfood) {
+            var mprogram = new Meal(yumfood);
+            mprogram.insertRecord();
+          });
+          webDB.execute('SELECT * FROM finder', function(rows) {
+            // Now instanitate those rows with the .loadAll function, and pass control to the view.
             Meal.loadAll(rows);
             console.log('fetch');
-            next();
-            });
+            callback();
+          });
         });
-      }
+      // }
     });
   };
 
@@ -152,5 +139,5 @@ Meal.allMeals = function() {
   }, []);
 };
 
-  module.Meal = Meal;
-})(window);
+//   module.Meal = Meal;
+// })(window);

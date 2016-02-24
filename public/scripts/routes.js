@@ -1,6 +1,10 @@
-// page('/', homeController.index);
+// page('/',
+// mealController.loadAll,
+// homeController.index);
 //
-// page('/finder', finderController.index );
+// page('/finder', mealController.loadAll,
+//  mealController.index );
+
 page('/resources', resourcesController.index);
 page('/about', aboutController.index);
 
