@@ -1,42 +1,107 @@
 
-body{
-    background-image: url("http://www.lightcapturephoto.com/media/original/Seattle-Skyline-Mount-Rainier.jpg");
-    font-family: 'Cantarell', sans-serif;
-}
-header{
-  height:500px;
-  background-color: rgba(
-165,18,18,.25);
-/*   position: fixed; */
+
+.main-nav {
+    display: inline-flex;
+    width: 960px;
+    height: 4vw;
+    margin-right: 1vw;
+    height: 4vw;
+
+    background-color: rgba(232,183,26,0.9);
+    margin-top: 1vw;
+    /* text-align: center; */
+    justify-content: center;
 }
 
-h1{
-    font-size:5em;
-  color:white;
+.main-nav li {
+    display: inline-flex;
+    color: rgb(247,234,200);
+    float: right;
+    margin-right: 2vw;
+    height: 2.5vw;
+    margin-bottom: .5vw;
+    margin-top: .5vw;
 }
 
-h3{
-    font-size:3em;
-  color:white;
-}
-
-.tab{
-  display:inline-block;
-  float:right;
-position:relative;
-  margin-right:8px;
-}
-
-a{
+/*a{
    text-decoration: none;
     color:white;
     font-size:1.25em;
-}
+}*/
 
-#mealtype-filter{
+
+/*#finder {
+  display: inline-flex;
+
+  height: 2vw;
+  width: 3vw;
+  background-color: rgb(219,51,64);
+}*/
+
+#finder h2 {
+  display: inline-flex;
+
+  height: 2vw;
+  width: 3vw;
+  background-color: rgb(219,51,64);
+}
+ #mealtype-filter {
+  display: flex;
   height:30px;
   width:150px;
   color:white;
-  background-color:rgba(85,98,112,.5);
+    background-color: rgb(219,51,64);
   font-size:1em;
+}
+.tab-content {
+
+}
+
+#map {
+  height: 100%;
+}
+
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.tab {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.tab:hover, .tab:focus, .tab:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
