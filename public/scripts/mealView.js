@@ -2,16 +2,19 @@
 
 var mealView = {};
 
+var render = function(article) {
+  var template = Handlebars.compile($('#meal-template').text());
+  return template(article);
+}
 
  mealView.populateFilters = function(){
    $('article').each(function() {
      if (!$(this).hasClass('template')) {
        var val = $(this).find('li h4').text();
        var optionTag = '<option value="' + val + '">' + val + '</option>';
-       $('#mealtype-filter').append(optionTag);
+      $('#mealtype-filter').append(optionTag);
+     }
 
-
-     };
    });
 
    mealView.handleMealFilter = function() {
@@ -27,14 +30,18 @@ var mealView = {};
        });
      };
 
-     mealView.handleMainNav = function() {
-    $('.main-nav').on('click', '.tab', function(e) {
-      $('.tab-content').hide();
-      $('#' + $(this).data('content')).fadeIn();
-    });
+  mealView.create = function() {
+    var article;
+    $('#finder').empty();
 
-    $('.main-nav .tab:first').click();
-  };
+    article = new Meal({
+      mealType: opts.mealType;
+      address: opts.address;
+      peopleServed: opts.peopleServed;
+      timesOpen: opts.timesOpen;
+      programName: opts.programName;
+    })
+  }
 
   mealView.initIndexPage = function() {
     Meal.all.forEach(function(a){
@@ -46,6 +53,7 @@ var mealView = {};
     mealView.handleMainNav();
 
   };
+
 
 };
 

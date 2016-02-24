@@ -7,14 +7,13 @@ mealController.index = function(){
   Meal.fetchAll(mealView.initIndexPage);
 };
 
-mealController.loadByMealType = function(ctx, next){
-  var mealData = function(meal){
-    ctx.articles = meal;
-    next();
-  };
-  mealData.findWhere('x', ctx.params.id, mealData);
-}
-
+// mealController.loadByMealType = function(ctx, next){
+//   var mealData = function(meal){
+//     ctx.articles = meal;
+//     next();
+//   };
+//   mealData.findWhere('x', ctx.params.id, mealData);
+// }
 
 
  module.mealController = mealController;
