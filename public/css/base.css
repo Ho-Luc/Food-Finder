@@ -8,10 +8,15 @@ img {
 }
 
 body {
-  /*background-image: url("../vendor/imgs/food-sampling.jpg");
-  background-attachment: 0.6;*/
+  background-image: url("../vendor/imgs/chalk2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: 0.6;
+  background-color: white ;
   font-family: 'Viga', sans-serif;
-  padding: 1em;
+  padding: 3em;
+  position: relative;
+  z-index: -2;
   }
 
 main {
@@ -21,6 +26,14 @@ main {
   margin: 0;
     }
 
+footer {
+    padding: 1em;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    opacity: 0.8;
+}
 
 
 a { text-decoration: none; color: white; }
