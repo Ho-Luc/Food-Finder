@@ -5,22 +5,22 @@
     "mealType": "Breakfast",
     "peopleServed": "OPEN TO ALL",
     "address": "2515 Western Ave.,  Seattle",
-    "programName":"Millionair Club Charity"
+    "programName": "Millionair Club Charity"
   },
   {
 
     "timesOpen": "Sunday - Thursday 5:30 - 8:30 A.M.",
     "mealType":  "Breakfast",
     "peopleServed": "OPEN TO ALL",
-    "address":"8201 10th Ave S., Seattle",
-     "programName": "South Park Breakfast Bunch"
+    "address": "8201 10th Ave S., Seattle",
+    "programName": "South Park Breakfast Bunch"
   },
   {
 
     "timesOpen": "Monday - Friday 7:00 - 9:30 A.M.",
     "mealType": "Breakfast",
     "peopleServed": "AMERICAN INDIANS ONLY",
-    "address":"410 2nd Ave. Extension So., Seattle",
+    "address": "410 2nd Ave. Extension So., Seattle",
     "programName": "Chief Seattle Club"
   },
   {
@@ -43,38 +43,38 @@
 
     "timesOpen": "Daily: 1st seating is 7:20 - 7:50 A.M. (overnight guests only) 2nd seating is 8:10 - 8:40 A.M. (day program clients)",
     "mealType": "Breakfast",
-     "peopleServed": "WOMEN 18 AND OLDER",
+    "peopleServed": "WOMEN 18 AND OLDER",
     "address": "2030 3rd Ave, Seattle",
     "programName": "YWCA Angeline's Meals Program"
   },
   {
 
     "timesOpen": "3 Breakfasts per week on variable days: 8:00 A.M.",
-  "mealType":   "Breakfast",
-     "peopleServed": "OPEN TO 55+ ",
-     "address": "85 Pike St.  Suite 200,  Seattle",
-    "programName":  "Pike Market Senior Center"
+    "mealType":   "Breakfast",
+    "peopleServed": "OPEN TO 55+ ",
+    "address": "85 Pike St.  Suite 200,  Seattle",
+    "programName": "Pike Market Senior Center"
   },
   {
 
     "timesOpen": "Daily: 8:00 A.M.",
-    "mealType":  "Breakfast",
+    "mealType": "Breakfast",
     "peopleServed": "OPEN TO MEN 50+ ",
     "address": "1561 Alaskan Way S.,  Seattle",
-     "programName": "Saint Martin's de Porres Shelter"
+    "programName": "Saint Martin's de Porres Shelter"
   },
   {
 
     "timesOpen": "Monday - Friday: Breakfast 8:00 - 9:00 A.M.",
     "mealType":  "Breakfast",
     "peopleServed": "OPEN TO ALL",
-    "address": "Outdoor Meal Site at 6th and Columbia, Seattle",
+    "address": "6th and Columbia, Seattle",
     "programName":  "Operation Sack Lunch"
   },
   {
 
     "timesOpen": "Monday - Friday: 8:30 - 9:30 A.M.; Saturdays: 10:00 A.M.",
-   "mealType": "Breakfast",
+    "mealType": "Breakfast",
     "peopleServed": "OPEN TO WOMEN & CHILDREN ONLY",
     "address": "210 Dexter Avenue, Seattle",
     "programName": "Mary's Place / Church of Mary Magdalene"
@@ -84,7 +84,7 @@
     "timesOpen": "Tuesday - Sunday: 9:00 - 11:00 A.M.",
     "mealType": "Breakfast",
     "peopleServed": "OPEN TO ALL",
-    "address":"508 Broadway, Seattle",
+    "address": "508 Broadway, Seattle",
     "programName": "Our Lady of Mt. Carmel"
   },
   {
@@ -92,14 +92,14 @@
     "timesOpen": "3rd Sunday: Hot Brunch 10:00  - 11:00 A.M.",
     "mealType": "Breakfast",
     "peopleServed": "OPEN TO ALL",
-    "address": "Outdoor Meal Site at 6th and Columbia, Seattle",
-   "programName":  "Mother's Kitchen"
+    "address": "6th and Columbia, Seattle",
+    "programName": "Mother's Kitchen"
   },
   {
 
     "timesOpen": "Mon, Tues, Thurs, & Fri: 10:00  - 11:00 A.M.",
     "mealType": "Breakfast",
-  "peopleServed":  "YOUTH 22 AND YOUNGER",
+    "peopleServed": "YOUTH 22 AND YOUNGER",
     "address": "2709 3rd Ave., Seattle",
     "programName": "New Horizons Ministries"
   },
@@ -107,143 +107,143 @@
 
     "timesOpen": "Last Sunday of Each Month / November - March: 8:00 - 10:00 AM",
     "mealType":  "Breakfast",
-     "peopleServed": "OPEN TO ALL",
-    "address":  "Outdoor Meal Site at 6th and Columbia, Seattle",
-    "programName":  "Magic Works Alumni"
+    "peopleServed": "OPEN TO ALL",
+    "address": "6th and Columbia, Seattle",
+    "programName": "Magic Works Alumni"
   },
   {
 
-  "timesOpen": "Fridays: 10:30 A.M.",
-  "mealType":   "Lunch",
-  "peopleServed": "OPEN TO ALL",
-   "address":  "919 King Street, Seattle",
-  "programName":   "ACRS Food Bank"
+    "timesOpen": "Fridays: 10:30 A.M.",
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO ALL",
+    "address": "919 King Street, Seattle",
+    "programName": "ACRS Food Bank"
   },
   {
 
     "timesOpen": "Tuesday through Friday: 11:00 A.M.- 1:00 P.M.",
     "mealType":  "Lunch",
-     "peopleServed": "OPEN TO YOUTH UP TO  AGE 21",
-     "address": "1814 Summit Ave.,  Seattle",
-    "programName":  "(PSKS) Peace for the Streets by Kids from the Streets"
+    "peopleServed": "OPEN TO YOUTH UP TO  AGE 21",
+    "address": "1814 Summit Ave,  Seattle",
+    "programName": "(PSKS) Peace for the Streets by Kids from the Streets"
   },
   {
 
     "timesOpen": "2nd  and 4th Sunday: 11:00 A.M. to 12:30 P.M.",
-  "mealType": "Lunch",
+    "mealType": "Lunch",
     "peopleServed": "OPEN TO ALL",
-     "address": "Outdoor Meal Site at 6th and Columbia, Seattle",
+    "address": "6th and Columbia, Seattle",
     "programName":  "Set Free Ministries"
   },
   {
 
     "timesOpen": "Tuesdays: 11:00 A.M. - 1:00 P.M.",
     "mealType":  "Lunch",
-    "peopleServed":"Primarily low-income Samoan seniors",
-     "address": "3204 SW Holly St., Seattle (Holly Park Comm. Center)",
-     "programName": "Samoana Senior Club"
+    "peopleServed": "Primarily low-income Samoan seniors",
+    "address": "3204 SW Holly St, Seattle (Holly Park Comm. Center)",
+    "programName": "Samoana Senior Club"
   },
   {
     "timesOpen": "Fridays: 11:00 A.M. - 1:00 P.M.",
     "mealType": "Lunch",
-  "peopleServed":  "Primarily low-income Tongan & PI Seniors",
-  "address":  "2801 SW Thistle Street, Seattle",
+    "peopleServed":  "Primarily low-income Tongan & PI Seniors",
+    "address":  "2801 SW Thistle Street, Seattle",
     "programName": "Friendly Island of Tonga Seniors"
   },
   {
 
     "timesOpen": "Daily  1st seating: 11:30 A.M. -12:00 P.M., 2nd seating: 12:30-1:00 P.M.",
     "mealType":  "Lunch",
-      "WOMEN 18 AND OLDER",
+    "peopleServed": "WOMEN 18 AND OLDER",
     "address":  "2030 3rd Ave, Seattle",
     "programName": "YWCA Angeline's Meals Program"
   },
   {
 
     "timesOpen": "Monday - Friday: 11:30 A.M.. - 12:30 P.M.",
-  "mealType": "Lunch",
-     "peopleServed": "OPEN TO AGES 60+",
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO AGES 60+",
     "address": "409 Maynard Ave South, Seattle",
-    "programName":   "Legacy House Nutrition Program"
+    "programName": "Legacy House Nutrition Program"
   },
   {
 
     "timesOpen": "Tuesday and Friday 11:30 A.M. - 12:30 P.M.",
     "mealType": "Lunch",
-     "peopleServed": "OPEN TO ALL",
+    "peopleServed": "OPEN TO ALL",
     "address": "3639 Martin Luther King Way, Seattle ",
     "programName":  "Emergency Senior Nutrition Program"
   },
   {
 
     "timesOpen": "Fridays: 11:30 A.M. - 12:30 P.M.",
-  "mealType": "Lunch",
-     "peopleServed": "OPEN TO ALL",
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO ALL",
     "address": "5710 22nd Ave. NW  Seattle",
     "programName":  "Saint Luke's Episcopal Church"
   },
   {
 
     "timesOpen": "Tuesdays: 11:30 A.M.",
-  "mealType": "Lunch",
+    "mealType": "Lunch",
     "peopleServed": "OPEN TO ALL",
-  "address":  "8201 10th Ave South, Seattle",
+    "address": "8201 10th Ave South, Seattle",
     "programName": "Latino Lunch"
   },
   {
 
     "timesOpen": "Wednesday & Friday: 11:30 A.M.",
-  "mealType": "Lunch",
+    "mealType": "Lunch",
     "peopleServed": "OPEN TO ALL",
-  "address":  "8201 10th Ave South, Seattle",
-  "programName": "PAEP/Polynesian Nutrition Program"
+    "address":  "8201 10th Ave South, Seattle",
+    "programName": "PAEP/Polynesian Nutrition Program"
   },
   {
 
     "timesOpen": "Tuesdays & Fridays: 11:30 A.M. - 1:00 P.M.",
-  "mealType": "Lunch",
-  "peopleServed":  "Primarily low-income Samoans",
-  "address":  "330 19th Ave, Seattle",
-  "programName":  "ACRS/Korean Senior Club"
+    "mealType": "Lunch",
+    "peopleServed": "Primarily low-income Samoans",
+    "address":  "330 19th Ave, Seattle",
+    "programName":  "ACRS/Korean Senior Club"
   },
   {
 
     "timesOpen": "Monday - Friday: 12:00 - 12:45 P.M.",
     "mealType": "Lunch",
     "peopleServed": "OPEN TO ALL/ Must be sober",
-     "address": "611 12th Ave South, Suite 300, Seattle",
-     "programName": "Seattle Indian Center"
+    "address": "611 12th Ave South, Suite 300, Seattle",
+    "programName": "Seattle Indian Center"
   },
   {
 
     "timesOpen": "Chapel required prior to meal service.  Please arrive between 11:00 - 11:30 A.M., chapel begins at 11:30 A.M., meal is served at 12:00 P.M.",
-     "mealType": "Lunch",
-      "peopleServed": "OPEN TO ALL",
-    "address":  "318 2nd Ave. S. Extension,  Seattle",
-    "programName":   "Union Gospel Mission"
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO ALL",
+    "address": "318 2nd Ave. S. Extension,  Seattle",
+    "programName": "Union Gospel Mission"
   },
   {
 
     "timesOpen": "Thursdays: 12:00 - 1:00 P.M.",
     "mealType": "Lunch",
-     "peopleServed": "OPEN TO ALL",
-      "address": "31957 E. Commercial Street, Carnation",
-      "programName": "Hopelink/Sno-Valley"
+    "peopleServed": "OPEN TO ALL",
+    "address": "31957 E. Commercial Street, Carnation",
+    "programName": "Hopelink/Sno-Valley"
   },
   {
 
     "timesOpen": "Daily: 12:00 P.M. (Closed 1st Wednesday of each month)",
     "mealType": "Lunch",
-     "peopleServed": "OPEN TO 55+ ",
+    "peopleServed": "OPEN TO 55+ ",
     "address": "85 Pike St.  Suite 200,  Seattle",
-     "programName": "Pike Market Senior Center"
+    "programName": "Pike Market Senior Center"
   },
   {
 
     "timesOpen": "Daily: 12:00  - 2:00 P.M.",
-     "mealType": "Lunch",
-     "peopleServed": "OPEN TO 50+",
-    "address":  "416 Second Ave Extension South, Seattle",
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO 50+",
+    "address": "416 Second Ave Extension South, Seattle",
     "programName": "Lazurus Day Center"
   },
   {
@@ -251,39 +251,39 @@
     "timesOpen": "Every Saturday : 12:00 - 1:00 P.M.",
     "mealType": "Lunch",
     "peopleServed": "OPEN TO ALL",
-    "address":"Outdoor Meal Site at 6th and Columbia, Seattle",
+    "address": "6th and Columbia, Seattle",
     "programName":  "Bible Study Out Reach Ministries"
   },
   {
 
     "timesOpen": "Every Sunday 12:00 - 2:00 P.M.",
-     "mealType": "Lunch",
-     "peopleServed": "OPEN TO ALL",
-     "address":"5050 8th Ave. NE,  Seattle",
-     "programName": "Blessed Sacrament Church Sunday Dinner "
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO ALL",
+    "address": "5050 8th Ave. NE,  Seattle",
+    "programName": "Blessed Sacrament Church Sunday Dinner "
   },
   {
 
     "timesOpen": "Mon, Wed, Thurs, Friday - Sack Lunch 12 P.M., Tue - 12:30 P.M. (Hot Lunch)",
-     "mealType": "Lunch",
-     "peopleServed": "OPEN TO ALL",
-  "address":   "97 South Main St.,  Seattle",
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO ALL",
+    "address": "97 South Main St,  Seattle",
     "programName": "Bread of Life Mission"
   },
   {
 
     "timesOpen": "Tuesday & Friday: 12:00 P.M. (noon)",
-     "mealType": "Lunch",
-     "peopleServed": "OPEN TO ALL",
-     "address":"1710 11th Ave., Seattle",
-     "programName": "Community Lunch on Capitol Hill"
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO ALL",
+    "address": "1710 11th Ave., Seattle",
+    "programName": "Community Lunch on Capitol Hill"
   },
   {
 
     "timesOpen": "Monday - Friday: 12:00 - 1:00 P.M.",
     "mealType": "Lunch",
     "peopleServed": "OPEN TO ALL",
-   "address": "2524 16th Ave. S, Seattle",
+    "address": "2524 16th Ave. S, Seattle",
     "programName": "El Centro de La Raza"
   },
   {
@@ -291,8 +291,8 @@
     "timesOpen": "Last Sunday of each month: 12:00 - 2:00 P.M.",
     "mealType": "Lunch",
     "peopleServed": "OPEN TO ALL",
-     "address": "1215 Thomas St., Seattle",
-      "programName": "Community Lunch / Immanuel Community Services"
+    "address": "1215 Thomas St., Seattle",
+    "programName": "Community Lunch / Immanuel Community Services"
   },
   {
 
@@ -300,13 +300,13 @@
     "mealType": "Lunch",
     "peopleServed": "OPEN TO ALL",
     "address": "2515 Western Ave.,  Seattle",
-    "Millionair Club Charity"
+    "programName": "Millionair Club Charity"
   },
   {
 
     "timesOpen": "Mondays: 12:00 - 1:00 P.M.",
     "mealType": "Lunch",
-     "peopleServed": "OPEN TO ALL",
+    "peopleServed": "OPEN TO ALL",
     "address":  "Calvary Lutheran 7002 23rd Ave NW, Seattle",
     "programName":  "Phinney Neighborhood Association"
   },
@@ -321,50 +321,49 @@
   {
 
     "timesOpen": "3rd Sunday: 12:00 - 1:00 P.M.",
-     "mealType": "Lunch",
-      "peopleServed": "OPEN TO ALL",
-      "address": "Outdoor Meal Site at 6th and Columbia, Seattle",
-      "programName":  "Anonymous Acts of Kindness"
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO ALL",
+    "address": "6th and Columbia, Seattle",
+    "programName":  "Anonymous Acts of Kindness"
   },
   {
 
     "timesOpen": "Monday - Friday: 12:30 - 1:00 P.M.",
     "mealType": "Lunch",
-     "peopleServed": "Youth 13-21",
-     "address": "1828 Yale Avenue (on the corner of Denny and Stewart)",
-     "programName": "Youth Care's Orion Center"
+    "peopleServed": "Youth 13-21",
+    "address": "1828 Yale Avenue (on the corner of Denny and Stewart)",
+    "programName": "Youth Care's Orion Center"
   },
   {
 
     "timesOpen": "Mondays: 12:30  - 1:00 P.M.",
-     "mealType": "Lunch",
-      "peopleServed": "OPEN TO ALL",
-      "address":"Woodland Park Pres. Church 225 N. 70th, Seattle",
-    "programName":   "Monday Feeding Program"
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO ALL",
+    "address":"Woodland Park Pres. Church 225 N. 70th, Seattle",
+    "programName": "Monday Feeding Program"
   },
   {
 
     "timesOpen": "Tuesday & Thursday: 12:30 P.M.",
     "mealType": "Lunch",
-     "peopleServed": "OPEN TO ALL",
-    "address":  "5740 MLK Jr. Way South, Seattle",
-      "programName": "PAEP/Filipino Senior Services"
+    "peopleServed": "OPEN TO ALL",
+    "address": "5740 MLK Jr. Way South, Seattle",
+    "programName": "PAEP/Filipino Senior Services"
   },
   {
 
     "timesOpen": "Tuesday & Friday; 12:30 P.M.",
     "mealType": "Lunch",
-     "peopleServed": "OPEN TO ALL",
+    "peopleServed": "OPEN TO ALL",
     "address":"6721 51st Ave South, Seattle",
-     "programName": "PAEP/Laotian & H'mong Senior Srvcs."
+    "programName": "PAEP/Laotian & H'mong Senior Srvcs."
   },
   {
-
     "timesOpen": "Monday - Saturday: 12:30 P.M.",
-     "mealType": "Lunch",
-     "peopleServed": "OPEN TO WOMEN & CHILDREN ONLY",
-     "address": "210 Dexter Avenue, Seattle",
-      "programName": "Mary's Place / Church of Mary Magdalene"
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO WOMEN & CHILDREN ONLY",
+    "address": "210 Dexter Avenue, Seattle",
+    "programName": "Mary's Place / Church of Mary Magdalene"
   },
   {
 
@@ -377,130 +376,130 @@
   {
 
     "timesOpen": "Monday - Friday: Lunch 1:00 - 2:00 P.M.",
-     "mealType": "Lunch",
-      "peopleServed": "OPEN TO ALL",
-      "address": "Outdoor Meal Site at 6th and Columbia,  Seattle",
-      "programName": "Operation Sack Lunch"
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO ALL",
+    "address": "6th and Columbia,  Seattle",
+    "programName": "Operation Sack Lunch"
   },
   {
 
     "timesOpen": "1st, 2nd, and 4th Sunday: 1:00 - 2:00 P.M.  ",
     "mealType": "Lunch",
     "peopleServed": "OPEN TO ALL",
-    "address":"Outdoor Meal Site at 6th and Columbia, Seattle ",
-    "programName":  "Anonymous Acts of Kindness"
+    "address": "6th and Columbia, Seattle ",
+    "programName": "Anonymous Acts of Kindness"
   },
   {
 
     "timesOpen": "Monday - Thursday: 1:15  - 3:45 P.M.",
-     "mealType": "Lunch",
-     "peopleServed": "Youth 12 - 22",
-      "address":"4516 15th Ave NE, Seattle",
+    "mealType": "Lunch",
+    "peopleServed": "Youth 12 - 22",
+    "address": "4516 15th Ave NE, Seattle",
     "programName": "U-District Youth Center"
   },
   {
 
     "timesOpen": "Last Sunday of every month: 2:00 P.M.",
-      "mealType": "Lunch",
-     "peopleServed": "OPEN TO ALL",
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO ALL",
     "address": "111 NE 80th St.  Seattle",
-    "programName":  "Saint Andrew's Episcopal Church Jubilee Dinners"
+    "programName": "Saint Andrew's Episcopal Church Jubilee Dinners"
   },
   {
 
     "timesOpen": "4th Saturday: 2:00 - 3:30 P.M.",
-      "mealType": "Lunch",
-     "peopleServed": "OPEN TO ALL",
-    "address": "Outdoor Meal Site at 6th and Columbia, Seattle",
-     "programName": "Restoration Life Church"
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO ALL",
+    "address": "6th and Columbia, Seattle",
+    "programName": "Restoration Life Church"
   },
   {
 
     "timesOpen": "3rd Sunday: 2:00 - 3:30 P.M.",
-      "mealType": "Lunch",
-     "peopleServed": "OPEN TO ALL",
-    "address": "Outdoor Meal Site at 6th and Columbia, Seattle",
-    "programName":  "Curry Temple"
+    "mealType": "Lunch",
+    "peopleServed": "OPEN TO ALL",
+    "address": "6th and Columbia, Seattle",
+    "programName": "Curry Temple"
   },
   {
 
     "timesOpen": "2nd Saturday: 1:00 - 2: 00 P.M.",
     "mealType": "Snack",
     "peopleServed": "OPEN TO ALL",
-    "address": "Outdoor Meal Site at 6th and Columbia, Seattle",
-    "programName":  "Seeds of Abraham Pentecostal Church"
+    "address": "6th and Columbia, Seattle",
+    "programName": "Seeds of Abraham Pentecostal Church"
   },
   {
 
     "timesOpen": "Daily: 3:00 - 3:30 P.M. ",
-  "mealType": "Snack",
+    "mealType": "Snack",
     "peopleServed": "WOMEN 18 AND OLDER",
-    "address":"2030 3rd Ave, Seattle",
+    "address": "2030 3rd Ave, Seattle",
     "programName": "YWCA Angeline's Meals Program"
   },
   {
 
     "timesOpen": "2nd Saturday: 3:00 - 4:30 P.M.",
-     "mealType": "Dinner",
-     "peopleServed": "OPEN TO ALL",
-    "address": "Outdoor Meal Site at 6th and Columbia, Seattle",
-    "programName":  "Neighborhood Cooking Foundation"
+    "mealType": "Dinner",
+    "peopleServed": "OPEN TO ALL",
+    "address": "6th and Columbia, Seattle",
+    "programName": "Neighborhood Cooking Foundation"
   },
   {
 
     "timesOpen": "1st, 3rd and 5th Saturday: 4:00 - 5:30 P.M.",
-     "mealType": "Dinner",
-     "peopleServed": "OPEN TO ALL",
-      "address":"Outdoor Meal Site at 6th and Columbia, Seattle",
-      "programName":  "Mount Zion Baptist Church / Street Feeding Ministry"
+    "mealType": "Dinner",
+    "peopleServed": "OPEN TO ALL",
+    "address": "6th and Columbia, Seattle",
+    "programName":  "Mount Zion Baptist Church / Street Feeding Ministry"
   },
   {
 
     "timesOpen": "Monday - Friday: 4:30 - 5:00 P.M.",
-     "mealType": "Dinner",
-      "peopleServed": "Women, Children, Families, Men 55+",
-       "address":"803 Terry Ave., Seattle",
-      "programName":  "Cathedral Kitchen"
+    "mealType": "Dinner",
+    "peopleServed": "Women, Children, Families, Men 55+",
+    "address": "803 Terry Ave., Seattle",
+    "programName":  "Cathedral Kitchen"
   },
   {
 
     "timesOpen": "Mondays: 4:30 - 5:15 P.M.",
     "mealType": "Dinner",
-     "peopleServed": "OPEN TO ALL",
-     "address":"100 N street SE, Auburn",
-      "programName": "Auburn Community Supper"
+    "peopleServed": "OPEN TO ALL",
+    "address": "100 N street SE, Auburn",
+    "programName": "Auburn Community Supper"
   },
   {
 
     "timesOpen": "Tuesdays: 5:00 - 6:00 P.M.",
-     "mealType": "Dinner",
-     "peopleServed": "OPEN TO ALL",
-     "address":"St. John's Lutheran 5515 Phinney Ave N., Seattle",
-      "programName": "Phinney Neighborhood Association"
+    "mealType": "Dinner",
+    "peopleServed": "OPEN TO ALL",
+    "address": "St. John's Lutheran 5515 Phinney Ave N., Seattle",
+    "programName": "Phinney Neighborhood Association"
   },
   {
 
     "timesOpen": "Tuesday - Saturday: 5:15 - 6:00 P.M. (Must be sober 24 hours, must attend at least 1 recovery focused meeting per week)",
-     "mealType": "Dinner",
-     "peopleServed": "OPEN TO ALL",
+    "mealType": "Dinner",
+    "peopleServed": "OPEN TO ALL",
     "address": "2022 Boren Avenue, Seattle",
-    "programName":   "Recovery Café"
+    "programName": "Recovery Café"
   },
   {
 
     "timesOpen": "Monday & Fridays: 5:30 P.M.",
-     "mealType": "Dinner",
-     "peopleServed": "OPEN TO ALL",
-     "address":"8201 10th Ave South, Seattle",
-     "South Park Senior Meals"
+    "mealType": "Dinner",
+    "peopleServed": "OPEN TO ALL",
+    "address": "8201 10th Ave South, Seattle",
+    "programName": "South Park Senior Meals"
   },
   {
 
     "timesOpen": "Daily: 5:30 - 6:30 P.M. (No chapel requirement unless staying as a overnight guest)",
     "mealType": "Dinner",
-     "peopleServed": "OPEN TO ALL",
+    "peopleServed": "OPEN TO ALL",
     "address":  "318 2nd Ave. S. Extension,  Seattle",
-      "programName": "Union Gospel Mission"
+    "programName": "Union Gospel Mission"
   },
   {
     "timesOpen": "Monday - Friday: 6:00 - 6:30 P.M.",
@@ -515,54 +514,54 @@
     "mealType": "Dinner",
     "peopleServed": "OPEN TO ALL",
     "address": "1415 NE 43rd Street, Seattle (alley entrance)",
-    "programName":  "Friday Feast: ROOTS"
+    "programName": "Friday Feast: ROOTS"
   },
   {
 
     "timesOpen": "Sundays: 6:00 - 7:00 P.M.; Monday through Wednesday: 7:00 - 8:00 P.M.",
     "mealType": "Dinner",
     "peopleServed": "YOUTH 22 OR YOUNGER ",
-    "address":  "2709 3rd Ave., Seattle",
-       "programName": "New Horizons Ministries"
+    "address": "2709 3rd Ave., Seattle",
+    "programName": "New Horizons Ministries"
   },
   {
-      "timesOpen": "Daily: 6:30 P.M.",
-      "mealType": "Dinner",
-       "peopleServed": "OPEN TO MEN 50+ ",
-      "address": "1561 Alaskan Way S., Seattle",
-      "programName":   "Saint Martin's de Porres Shelter"
+    "timesOpen": "Daily: 6:30 P.M.",
+    "mealType": "Dinner",
+    "peopleServed": "OPEN TO MEN 50+ ",
+    "address": "1561 Alaskan Way S., Seattle",
+    "programName":   "Saint Martin's de Porres Shelter"
   },
   {
 
     "timesOpen": "1st Sunday of each month 6:00 - 7:00 P.M.",
     "mealType": "Dinner",
     "peopleServed": "OPEN TO ALL",
-    "address":"Outdoor Meal Site at 6th and Columbia, Seattle",
-     "programName": "Neighborhood Cooking Foundation"
+    "address": "6th and Columbia, Seattle",
+    "programName": "Neighborhood Cooking Foundation"
   },
   {
 
     "timesOpen": "4th Saturday: 6:30 - 8:30 P.M.",
     "mealType": "Dinner",
-     "peopleServed": "OPEN TO ALL",
-    "address": "Outdoor Meal Site at 6th and Columbia, Seattle",
-     "programName": "Snoqualmie Valley Alliance Church"
+    "peopleServed": "OPEN TO ALL",
+    "address": "6th and Columbia, Seattle",
+    "programName": "Snoqualmie Valley Alliance Church"
   },
   {
 
     "timesOpen": "Everyday:  Dinner Intake at 5:45 P.M.  (Required chapel attendance before meal at 8pm)",
-     "mealType": "Dinner",
-     "peopleServed": "OPEN TO ALL",
+    "mealType": "Dinner",
+    "peopleServed": "OPEN TO ALL",
     "address": "97 South Main St.,  Seattle",
-      "programName": "Bread of Life Mission"
+    "programName": "Bread of Life Mission"
   },
   {
 
     "timesOpen": "Mondays: 7:00 - 8:00 P.M.",
-     "mealType": "Dinner",
-      "peopleServed": "Youth 13-25",
-      "address": "University Lutheran Church, N.E. 50th & 16th N.E., Seattle (Enter down the steps off 16th & 50th)",
-       "programName": "University Street Ministry Teen Feed"
+    "mealType": "Dinner",
+    "peopleServed": "Youth 13-25",
+    "address": "University Lutheran Church, N.E. 50th & 16th N.E., Seattle (Enter down the steps off 16th & 50th)",
+    "programName": "University Street Ministry Teen Feed"
   },
   {
 
@@ -577,7 +576,7 @@
     "timesOpen": "Wednesday & Thursday: 7:00 - 8:00 P.M.",
     "mealType": "Dinner",
     "peopleServed": "Youth 13-25",
-  "address": "University Congregational N.E. 45th & 16th N.E., Seattle (Down the seps off 16th)",
+    "address": "University Congregational N.E. 45th & 16th N.E., Seattle (Down the seps off 16th)",
     "programName": "University Street Ministry Teen Feed"
   },
   {
@@ -586,31 +585,30 @@
     "mealType": "Dinner",
     "peopleServed": "Youth 13-25",
     "address": "University Christian N.E. 50th & 15th N.E., Seattle",
-    "programName":  "University Street Ministry Teen Feed"
+    "programName": "University Street Ministry Teen Feed"
   },
   {
 
     "timesOpen": "Monday - Thursday: 7:30 - 9:00 P.M.",
-     "mealType": "Dinner",
-     "peopleServed": "OPEN TO ALL",
-    "address": "Outdoor Meal Site at 6th and Columbia, Seattle",
-    "programName":  "Lord's Table"
+    "mealType": "Dinner",
+    "peopleServed": "OPEN TO ALL",
+    "address": "6th and Columbia, Seattle",
+    "programName": "Lord's Table"
   },
   {
 
     "timesOpen": "Daily: 6:00 - 7:15 pm",
-     "mealType": "Dinner",
-    "peopleServed":"WOMEN 18 AND OLDER",
-      "2030 3rd Ave, Seattle",
-      "programName": "Women's Referral Center"
+    "mealType": "Dinner",
+    "peopleServed": "WOMEN 18 AND OLDER",
+    "address": "2030 3rd Ave, Seattle",
+    "programName": "Women's Referral Center"
   },
   {
 
     "timesOpen": "Major Holidays Only, Thanksgiving, Christmas, New Years day.",
     "mealType": "Dinner",
     "peopleServed": "OPEN TO ALL",
-    "address": "Outdoor Meal Site at 6th and Columbia, Seattle",
+    "address": "6th and Columbia, Seattle",
     "programName": "Friends of Francois"
   }
-
 ]
