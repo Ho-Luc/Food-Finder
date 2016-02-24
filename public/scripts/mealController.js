@@ -1,21 +1,35 @@
 (function(module){
  var mealController = {};
 
- // Meal.createTable();
+ Meal.createTable();
 
 mealController.index = function(ctx, next){
-  mealView.index(ctx.articles);
+  mealView.index(ctx.mProgram);
 };
 
-mealControler.loadByMealType = funciton(ctx, next){
-  var mealData = function(meal){
-    ctx.articles = meal;
+mealController.loadByMealType = function(ctx, next){
+  var mTypeData = function(mealCategory){
+    ctx.mProgram = mealCategory;
     next();
   };
-  Article.findWhere('x', ctx.params.id, mealData);
+  Meal.findWhere('mealType', ctx.params.mealType, mTypeData);
 }
 
+mealController.loadAll = function(ctx, next){
+  var mTypeData = function(allMealPrograms) {
+    ctx.mProgram = Meal.all;
+    next();
+  };
+
+  if (Meal.all.length) {
+    ctx.mProgram = Meal.all;
+    next();
+  } else {
+    Meal.fetchAll(mTypeData);
+  }
+};
 
 
+module.mealController = mealController;
 
-})
+})(window);

@@ -2,17 +2,20 @@
 
 var mealView = {};
 
-
  mealView.populateFilters = function(){
-   $('article').each(function() {
-     if (!$(this).hasClass('template')) {
-       var val = $(this).find('li h4').text();
-       var optionTag = '<option value="' + val + '">' + val + '</option>';
-       $('#mealtype-filter').append(optionTag);
+   var options,
+   template = Handlebars.compile($('#option-template').text());
 
-
+   Meal.allMeals(function(rows) {
+     if ($('#mealtype-filter option').length < 2) {
+       $('mealtype-filter').append(
+         rows.map(function(row) {
+           return template({val: row.mealType});
+         })
+       );
      };
    });
+ };
 
    mealView.handleMealFilter = function() {
        $('#mealtype-filter').on('change', function() {
@@ -27,27 +30,17 @@ var mealView = {};
        });
      };
 
-     mealView.handleMainNav = function() {
-    $('.main-nav').on('click', '.tab', function(e) {
-      $('.tab-content').hide();
-      $('#' + $(this).data('content')).fadeIn();
-    });
-
-    $('.main-nav .tab:first').click();
-  };
-
-  mealView.initIndexPage = function() {
-    Meal.all.forEach(function(a){
-      $('#finder').append(a.toHtml())
+  mealView.index = function(finder){
+    $('#finder').show().siblings().hide();
+    finder.forEach(function(a) {
+    $('#finder').append(a.toHtml())
     });
 
     mealView.populateFilters();
     mealView.handleMealFilter();
-    mealView.handleMainNav();
-
   };
 
-};
+
 
 module.mealView = mealView;
 })(window);
