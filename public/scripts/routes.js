@@ -1,6 +1,6 @@
 // page('/', homeController.index);
 //
-// page('/finder', finderController.index );
+page('/finder', mealController.index );
 page('/resources', resourcesController.index);
 page('/about', aboutController.index);
 

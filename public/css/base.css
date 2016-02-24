@@ -1,47 +1,33 @@
-
-
-body{
-    background-image: url("/vendor/imgs/food-sampling.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: 0.6;
-    font-family: 'Viga', sans-serif;
-      display: block;
-     height: inherit;;
-     width: auto;;
-     margin: 0;
-     padding: 1em;
-
+* {
+   border: 1px solid red !important;
 }
+
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-image: url("/vendor/imgs/food-sampling.jpg");
+  background-attachment: 0.6;
+  font-family: 'Viga', sans-serif;
+  padding: 1em;
+  }
+
 main {
-  /*background-image: url("/vendor/imgs/food-sampling.jpg");*/
   background-color: rgba(247,234,200, 0.7);
-  background-size: cover;
-  height: 250px;
-  width: 960px;
-  margin: 30px;
-
+  height: inherit;
+  width: auto;
   margin: 0;
-  padding: 1em;
-  z-index: 1;
+    }
+
+li {
+  color: rgb(247,234,200);
+  margin-right: 8vw;
+  padding-left: 1em;
+    }
 
 
-
-}
-header{
-height: 10em;
-background-color: rgba(40,171,227,0.9);
-z-index: 1;
-
-}
-
-header h1{
-  display: flex;
-  justify-content: center;
-  font-size:3em;
-  color:white;
-  padding: 1em;
-}
 
 a { text-decoration: none; color: white; }
 .clearfix { clear: both;}
