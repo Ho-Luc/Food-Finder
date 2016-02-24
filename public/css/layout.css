@@ -38,19 +38,36 @@ justify-content: space-between;;
   background-color:rgba(247,234,200, 0.3);
   padding: 1em;
 }
-
+/*home page*/
+.main_banner {
+  background-color: blue;
+}
 /*about page*/
 .mission-statement {
 height: 25em;
 width: 25em;
-background-image: url("vendor/imgs/food2.jpg");
+background: url("vendor/imgs/food2.jpg");
 z-index: -1;
 }
-.mission-statement:hover {
-  font-family:'Merriweather Sans', sans-serif;
-  height: 25em;
-  width: 25em;
+.main_banner li {
+  background-color: blue;
+}
 
+.bx-wrapper .bx-loading {
+    min-height: 50px;
+    background: url(images/bx_loader.gif) center center no-repeat blue;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+.mission-statement {
+height: 25em;
+width: 25em;
+background: url("vendor/imgs/food2.jpg");
+z-index: -1;
 }
 
 
