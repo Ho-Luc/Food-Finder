@@ -1,5 +1,22 @@
 
+/*home page slider*/
 
+div.bx-viewport {
+    width: 0%;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: rgb(31,218,154);
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: rgba(31,218,154,0.3);
+    display: flex;
+    width: 3em;
+    height: 1em;
+    margin: 0 2em;
+    border-radius: 2em;
+}
 
 .icon-menu {
   font-size: 3em;

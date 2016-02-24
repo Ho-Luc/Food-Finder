@@ -8,8 +8,8 @@ img {
 }
 
 body {
-  background-image: url("/vendor/imgs/food-sampling.jpg");
-  background-attachment: 0.6;
+  /*background-image: url("../vendor/imgs/food-sampling.jpg");
+  background-attachment: 0.6;*/
   font-family: 'Viga', sans-serif;
   padding: 1em;
   }
@@ -19,15 +19,6 @@ main {
   height: inherit;
   width: auto;
   margin: 0;
-    }
-
-
-
-.main-nav li {
-  color: rgb(247,234,200);
-  margin-right: 8vw;
-  padding-left: 1em;
-  font-size: 1.5em;
     }
 
 
