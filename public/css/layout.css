@@ -1,42 +1,145 @@
+/*universal page*/
 
-body{
-    background-image: url("http://www.lightcapturephoto.com/media/original/Seattle-Skyline-Mount-Rainier.jpg");
-    font-family: 'Cantarell', sans-serif;
-}
-header{
-  height:500px;
-  background-color: rgba(
-165,18,18,.25);
-/*   position: fixed; */
-}
-
-h1{
-    font-size:5em;
-  color:white;
+.heading-group-h1 {
+background-color: rgba(40,171,227,0.9);
+display: flex;
+justify-content:center;
+flex-direction: column;
+font-size:2em;
+color:white;
+padding: 1em;
 }
 
-h3{
-    font-size:3em;
-  color:white;
+.heading-group-h1 h1, h2 {
+text-align: center;
 }
 
-.tab{
-  display:inline-block;
-  float:right;
-position:relative;
-  margin-right:8px;
+.heading-group-h1 h2  {
+font-family: 'Courgette', cursive;
+font-size: 1em;
 }
 
-a{
-   text-decoration: none;
-    color:white;
-    font-size:1.25em;
+.main-nav {
+    display: flex;
+    background-color: rgba(232,183,26,0.9);
+    margin-top: 1vw;
+    justify-content: center;
+    margin-bottom: 1vw;
+    padding: 2em;
 }
 
-#mealtype-filter{
+
+.hrv-push {
+display: flex;
+justify-content: space-between;;
+}
+
+.tab-content {
+  background-color:rgba(247,234,200, 0.3);
+  padding: 1em;
+}
+/*home page*/
+.main_banner {
+  background-color: blue;
+}
+/*about page*/
+.mission-statement {
+height: 25em;
+width: 25em;
+background: url("vendor/imgs/food2.jpg");
+z-index: -1;
+}
+.main_banner li {
+  background-color: blue;
+}
+
+.bx-wrapper .bx-loading {
+    min-height: 50px;
+    background: url(images/bx_loader.gif) center center no-repeat blue;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+.mission-statement {
+height: 25em;
+width: 25em;
+background: url("vendor/imgs/food2.jpg");
+z-index: -1;
+}
+
+
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.tab {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.tab:hover, .tab:focus, .tab:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+/*finder page*/
+#map {
+  height: 50em;
+  width: 50em;
+}
+
+/*@media only screen and (min-width: 640px) {
+  .heading-group-h1 {
+    height: 3vw;
+    background-color: rgba(40,171,227,0.9);
+    /*z-index: 1;*/
+
+
+#finder h2 {
+  display: inline-flex;
+
+  height: 2vw;
+  width: 3vw;
+  background-color: rgb(219,51,64);
+}
+ #mealtype-filter {
+  display: flex;
   height:30px;
   width:150px;
   color:white;
-  background-color:rgba(85,98,112,.5);
+    background-color: rgb(219,51,64);
   font-size:1em;
 }
