@@ -1,0 +1,22 @@
+.icon-menu {
+  font-size: 3em;
+  float: right;
+}
+
+@media only screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+
+  .main-nav {
+    padding: .2em .2em .2em 2em;
+  }
+
+  .main-nav ul {
+    display: block;
+  }
+
+  .main-nav ul li {
+    display: inline;
+    border-bottom: none;
+  }
