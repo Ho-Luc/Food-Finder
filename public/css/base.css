@@ -15,16 +15,19 @@ body {
   }
 
 main {
-  background-color: rgba(247,234,200, 0.7);
+  /*background-color: rgba(247,234,200, 0.7);*/
   height: inherit;
   width: auto;
   margin: 0;
     }
 
-li {
+
+
+.main-nav li {
   color: rgb(247,234,200);
   margin-right: 8vw;
   padding-left: 1em;
+  font-size: 1.5em;
     }
 
 
