@@ -48,8 +48,18 @@
       $('.output').append(render(y));
     });
 
+  //   mealView.filteredAddresses = function(){
+  // return Meal.all.map(function(article){
+  //   return article.address;
+  // }).reduce(function(addresses, address){
+  //   if(addresses.indexOf(address) === -1){
+  //     addresses.push(address);
+  //   } return addresses;},[]);};
+
+  googleMap.initMap();
     googleMap.requestGeocoding(mealView.filteredData);
-    googleMap.addMarkers();
+
+    // googleMap.addMarkers();
 
   });
 

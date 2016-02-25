@@ -10,9 +10,11 @@
       center: {lat: 47.6097, lng: -122.3331},
       zoom: 11
     });
+
   };
 
   googleMap.addMarkers = function(location) {
+    console.log(latLngArray);
     $.each(latLngArray, function(idx, val){
       var marker = new google.maps.Marker({
         position: val.results[0].geometry.location,
@@ -20,6 +22,7 @@
         title: mealView.filteredData.programName
       });
       console.log(val.results[0].geometry.location);
+
     });
   };
 
@@ -35,6 +38,10 @@
         },
         success : function(data) {
           latLngArray.push(data); //on success, pushes to helper var array at top.
+          // console.log(data);
+            googleMap.addMarkers();
+
+
         }
       });
     });
