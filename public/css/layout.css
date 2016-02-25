@@ -163,15 +163,23 @@
 
 }
 
+/*about page */
+#about {
+  display: flex;
+  flex-direction: column;
+}
+.about-content p {
+  margin: 0;
+  display: flex;
+}
+.about-image {
+  width 100%;
+  display: flex;
+  justify-content: center;
+}
 
-
-
-
-
-
-/*#finder h2 {
-  display: inline-flex;
-  height: 2vw;
-  width: 3vw;
-  background-color: rgb(219,51,64);
-}*/
+@media only screen and (min-width: 640px) {
+  #about {
+   flex-direction: row;
+ }
+}
