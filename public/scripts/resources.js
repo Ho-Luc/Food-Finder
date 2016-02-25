@@ -61,7 +61,7 @@
       [
         {
           'sql': 'UPDATE resourcetable SET name = ?,category = ?, location = ?, hours = ?, WHERE id = ?;',
-          'data': [this.name, this.category, this.location, this.hours, this.id],
+          'data': [this.name, this.category, this.location, this.hours, this.id]
         }
       ],
       callback
@@ -80,7 +80,7 @@
         Resources.loadAll(rows);
         callback();
       } else {
-        $.getJSON('data/additionalResources.json', function(addedData) {
+        $.getJSON('/data/additionalResources.json', function(addedData) {
           console.log(addedData.length);
           addedData.forEach(function(morefood) {
             var addedSources = new Resources(morefood);

@@ -19,7 +19,7 @@
         )
       }
     });
-  },
+  };
 
   resourcesView.handleResourcesFilter = function() {
     $('#resources-filter').one('change', 'select', function() {

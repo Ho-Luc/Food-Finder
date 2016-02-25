@@ -48,9 +48,8 @@
       $('.output').append(render(y));
     });
 
+    googleMap.initMap();
     googleMap.requestGeocoding(mealView.filteredData);
-    googleMap.addMarkers();
-
   });
 
 module.mealView = mealView;

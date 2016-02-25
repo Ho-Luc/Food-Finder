@@ -1,7 +1,7 @@
 page('/',
   mealController.loadAll,
-  homeController.index,
-  resourcesController.loadAll);
+  resourcesController.loadAll,
+  homeController.index);
 
 page('/finder',
   mealController.index );
