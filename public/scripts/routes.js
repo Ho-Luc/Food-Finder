@@ -1,4 +1,5 @@
 page('/',
+  resourcesController.loadAll,
   mealController.loadAll);
 
 page('/finder',
