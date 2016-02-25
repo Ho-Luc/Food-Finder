@@ -1,0 +1,124 @@
+[
+  { "name": "Ballard Sunday Farmers Market",
+    "category": "Farmers Market",
+    "location": "22nd Ave, Seattle, WA 98107",
+    "hours": "Sundays 10:00 am - 3:00 pm"
+
+  },
+
+  { "name":"University District Farmers Market",
+    "category": "Farmers Market",
+    "location": "5031 University Way NE Seattle, WA 98105",
+    "hours": "Saturday 9:00 an - 2:00 pm"
+  },
+
+  { "name":"Broadway Farmers Market",
+    "category": "Farmers Market",
+    "location": "Broadway & E Pine St, Seattle, WA 98122",
+    "hours": "Sunday 11:00 am - 3:00 pm"
+  },
+
+  { "name": "Queen Anne Farmers Market",
+    "category": "Farmers Market",
+    "location": "W Crockett St & Queen Anne Ave N, Seattle, WA 98109",
+    "hours": "Thursdays 3:00 pm - 7:30 pm"
+  },
+
+  { "name": "West Seattle Farmers Market",
+    "category": "Farmers Market",
+    "location": "California Ave SW & SW Alaska, Seattle, WA 98116",
+    "hours": "Sunday 10:00 am - 2:00 pm"
+  },
+
+  { "name": "Columbia City Farmers Market",
+    "category": "Farmers Market",
+    "location": "4801 Rainier Ave S, Seattle, WA 98118",
+    "hours": "Wednesday 3:00 pm - 7:00 pm"
+  },
+
+  { "name": "Madrona Farmers Market",
+    "category": "Farmers Market",
+    "location": "1126 Martin Luther King Jr Way, Seattle, WA 98122",
+    "hours": "Friday 3:00 pm - 7:00 pm"
+  },
+
+  { "name": "Wallingford Market",
+    "category": "Farmers Market",
+    "location": "1815 N 45th St, Seattle, WA 98103",
+    "hours": "M-F 8:00 am - 8:00 pm, Sat 8:00 am - 6:00 pm, Sun 10:00 am - 5:00 pm"
+  },
+
+  { "name": "Phinney Farmers Market",
+    "category": "Farmers Market",
+    "location": "67th and Phinney Ave N, Seattle, WA 98103",
+    "hours": "Friday 3:00 pm - 7:00 pm"
+  },
+
+  { "name": "Four Seasons Farmer Market",
+    "category": "Farmers Market",
+    "location": "2119 Rainier Ave S, Seattle, WA 98144",
+    "hours": "Every Day 8:00 am - 8:00 pm"
+  },
+
+  { "name": "Northwest Harvest Cherry Street Food Bank",
+    "category": "Food Bank",
+    "location": "711 Cherry St, Seattle, WA 98104",
+    "hours": "M 9:00 am - 5:30 pm, W 9:00 am - 5:30 pm, Thu 9:00 am - 5:00 pm, Fri 9:00 am - 5:00 pm"
+  },
+
+  { "name":"Ballard Food Bank",
+    "category": "Food Bank",
+    "location":"5130 Leary Ave NW, Seattle, WA 98107",
+    "hours": "Tue 11:00 am - 6:00 pm, Wed 11:00 am - 3:00 pm, Thu 11:00 am - 3:00 pm, Sat 11:00 am - 3:00 pm"
+  },
+
+{ "name":"Greenwood Food Bank",
+  "category": "Food Bank",
+  "location": "9041 Greenwood Ave N, Seattle, WA 98103",
+  "hours": "Wed 1:00 pm - 6:00 pm"
+},
+
+
+{ "name": "North Helpline Food Bank",
+  "category": "Food Bank",
+  "location": "12736 33rd Ave NE, Seattle, WA 98125",
+  "hours": "Wed 10pm - 1pm, Thurs 4:30pm - 6:30pm, Sat 10:00am - 1:00pm"
+},
+
+{ "name":"West Seattle Food Bank",
+  "category": "Food Bank",
+  "location": "High Point 3419 SW Morgan St, Seattle, WA 98126",
+  "hours": "Tues 9:00 am - 11:00am (Seniors 55+), Wed 4:00pm - 7:00pm, Thur 10:00am - 1:00pm"
+},
+
+{ "name":"The Food Bank at St. Mary’s",
+  "category": "Food Bank",
+  "location": "611 20th Ave S, Seattle, WA 98144",
+  "hours": "Tues, Thu, Sat 10:00am - 1:00pm"
+},
+
+{ "name":"Rainier Valley Food Bank",
+  "category": "Food Bank",
+  "location": "4205 Rainier Ave S, Seattle, WA, 98118",
+  "hours": "Wed, Sat 9:30am — 2pm"
+},
+
+{ "name":"University District Food Bank",
+  "category": "Food Bank",
+  "location": "4731 15th Ave NE, Seattle, WA, 98105",
+  "hours":"Mon-Fri 9:00am — 3:00pm, Tues Thurs 2pm - 8pm"
+},
+
+{ "name": "FamilyWorks",
+  "category": "Food Bank",
+  "location": "1501 N. 45th St. 98103",
+  "hours": "Mon 9:00am -12pm,Tues Wed 9:am -5 pm, Thu 9:00am - 6:00pm, Fri 9:00am - 1:00pm"
+},
+
+{ "name": "St. Vincent de Paul Food and Clothing Bank",
+  "category": "Food Bank",
+  "location": "5950 Fourth Ave S., Seattle, WA 98108",
+  "hours": "Mon-Fri 8:00am - 4:30pm"
+}
+
+]
