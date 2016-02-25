@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' type='image/x-icon' href="/vendor/imgs/favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|ABeeZee|Viga|Courgette' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/jquery.bxslider.css" />
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/jquery.bxslider.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/jquery.bxslider.css" /> -->
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/jquery.bxslider.min.js"></script> -->
 
     <link rel="stylesheet" href="/css/reset.css">
     <!-- <link rel="stylesheet" href="/css/icons.css"> -->
@@ -15,114 +15,109 @@
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/modules.css">
 
-    <!--handlebars script tag here-->
-  <script id="meal-template" type="text/x-handlebars-template">
-    <article class="clearfix" data-category="{{mealType}}">
-      <header>
-        <h1>{{ProgramName}}</h1>
-        <div class="byline">
-          Located at: <address>{{address}}</address>
-        </header>
+    <!--finder template-->
+    <script id="meal-template" type="text/x-handlebars-template">
+      <article class="clearfix" data-category="{{mealType}}">
+        <header>
+          <h1>{{ProgramName}}</h1>
+          <div class="byline">
+            Located at: <address>{{address}}</address>
+          </header>
         </div>
         People Served: {{peopleServed}}
         <h3>Days and Times Served</h3>
         <ul>
           <li><h4><strong>{{mealType}}</strong></h4> is served {{timesOpen}}</li>
         </ul>
-</article>
+      </article>
     </script>
-
+    <!-- filter template -->
+    <script id="option-template" type="text/x-handlebars-template">
+      <option value="{{val}}">{{val}}</option>
+    </script>
   </head>
+
   <body>
 
     <header class="site-header">
       <section class="heading-group-h1">
-      <h1>Logo</h1>
-      <br>
+        <h1>Logo</h1>
+        <br>
         <h2>Food is just around the corner</h2>
-          </section>
+      </section>
     </header>
 
     <nav class="main-nav">
-
-    <img src="vendor/imgs/menu.svg" class="icon-menu">
+      <img src="vendor/imgs/menu.svg" class="icon-menu">
       <ul class="hvr-push">
         <li class="tab" data-content=""><a href="/">Home</a></li>
         <li class="tab" data-content=""><a href="/finder">Finder</a></li>
         <li class="tab" data-content=""><a href="/resources">Resources</a></li>
         <li class="tab" data-content=""><a href="/about">About</a></li>
-      <ul>
-    </nav>
-    <main>
-      <section id="home" class="tab-content">
-        <ul class="slider">
-          <li><img class="main_banner" src="" />
-            <h3 class="mission-statement">Mission Statement</h3>
-          </li>
-          <li><img class="main_banner" src="https://placeholdit.imgix.net/~text?txtsize=90&bg=000000&txt=960%C3%97450&w=960&h=450" /></li>
-          <li><img class="main_banner" src="https://placeholdit.imgix.net/~text?txtsize=90&bg=000000&txt=960%C3%97450&w=960&h=450" /></li>
-        </ul>
-        <section class="mission-statement">
+        <ul>
+        </nav>
+        <main>
+          <section id="home" class="tab-content">
+            <ul class="slider">
+              <li><img class="main_banner" src="" />
+                <h3 class="mission-statement">Mission Statement</h3>
+              </li>
+              <li><img class="main_banner" src="https://placeholdit.imgix.net/~text?txtsize=90&bg=000000&txt=960%C3%97450&w=960&h=450" /></li>
+              <li><img class="main_banner" src="https://placeholdit.imgix.net/~text?txtsize=90&bg=000000&txt=960%C3%97450&w=960&h=450" /></li>
+            </ul>
+            <section class="mission-statement">
 
-        <h2>Mission Statement</h2>
-        <p>Cat ipsum dolor sit amet, meow all night having their mate disturbing sleeping humans for lick butt. Bathe private parts with tongue then lick owner's face make meme, make cute face. Throwup on your pillow. Vommit food and eat it again hunt anything that moves refuse to leave cardboard box attack dog, run away and pretend to be victim yet eat grass, throw it back up and hopped up on catnip. Human is washing you why halp oh the horror flee scratch hiss bite leave hair everywhere, but lick arm hair touch water with paw then recoil in horror plan steps for world domination. Brown cats with pink ears stick butt in face if it fits, i sits scratch leg; meow for can opener to feed me chase imaginary bugs, and hack up furballs paw at your fat belly. If it fits, i sits. Cough furball. Please stop looking at your phone and pet me has closed eyes but still sees you shove bum in owner's face like camera lens and please stop looking at your phone and pet me so love to play with owner's hair tie. Chase red laser dot chew foot, or mark territory, and unwrap toilet paper sleep on dog bed, force dog to sleep on floor or hide from vacuum cleaner. Under the bed. Flee in terror at cucumber discovered on floor stare at ceiling touch water with paw then recoil in horror. Sleep on dog bed, force dog to sleep on floor cat is love, cat is life. Burrow under covers brown cats with pink ears stare at wall turn and meow stare at wall some more meow again continue staring . Climb leg. Vommit food and eat it again flop over, or have secret plans and poop in litter box, scratch the walls. Plan steps for world domination sit by the fire for cat slap dog in face. Where is my slave? I'm getting hungry. Spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce. Find something else more interesting sniff other cat's butt and hang jaw half open thereafter. White cat sleeps on a black shirt. Immediately regret falling into bathtub gnaw the corn cob brown cats with pink ears. Stretch jump off balcony, onto stranger's head kick up litter chase dog then run away stand in front of the computer screen. Spit up on light gray carpet instead of adjacent linoleum sleep on dog bed, force dog to sleep on floor attack feet hunt by meowing loudly at 5am next to human slave food dispenser, and meowwww. Attack feet paw at your fat belly cat snacks, yet destroy the blinds drink water out of the faucet so pee in human's bed until he cleans the litter box, eat from dog's food.
+              <h2>Mission Statement</h2>
+              <p>Cat ipsum dolor sit amet, meow all night having their mate disturbing sleeping humans for lick butt. Bathe private parts with tongue then lick owner's face make meme, make cute face. Throwup on your pillow. Vommit food and eat it again hunt anything that moves refuse to leave cardboard box attack dog, run away and pretend to be victim yet eat grass, throw it back up and hopped up on catnip. Human is washing you why halp oh the horror flee scratch hiss bite leave hair everywhere, but lick arm hair touch water with paw then recoil in horror plan steps for world domination. Brown cats with pink ears stick butt in face if it fits, i sits scratch leg; meow for can opener to feed me chase imaginary bugs, and hack up furballs paw at your fat belly. If it fits, i sits. Cough furball. Please stop looking at your phone and pet me has closed eyes but still sees you shove bum in owner's face like camera lens and please stop looking at your phone and pet me so love to play with owner's hair tie. Chase red laser dot chew foot, or mark territory, and unwrap toilet paper sleep on dog bed, force dog to sleep on floor or hide from vacuum cleaner. Under the bed. Flee in terror at cucumber discovered on floor stare at ceiling touch water with paw then recoil in horror. Sleep on dog bed, force dog to sleep on floor cat is love, cat is life. Burrow under covers brown cats with pink ears stare at wall turn and meow stare at wall some more meow again continue staring . Climb leg. Vommit food and eat it again flop over, or have secret plans and poop in litter box, scratch the walls. Plan steps for world domination sit by the fire for cat slap dog in face. Where is my slave? I'm getting hungry. Spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce. Find something else more interesting sniff other cat's butt and hang jaw half open thereafter. White cat sleeps on a black shirt. Immediately regret falling into bathtub gnaw the corn cob brown cats with pink ears. Stretch jump off balcony, onto stranger's head kick up litter chase dog then run away stand in front of the computer screen. Spit up on light gray carpet instead of adjacent linoleum sleep on dog bed, force dog to sleep on floor attack feet hunt by meowing loudly at 5am next to human slave food dispenser, and meowwww. Attack feet paw at your fat belly cat snacks, yet destroy the blinds drink water out of the faucet so pee in human's bed until he cleans the litter box, eat from dog's food.
 
-Pee in the shoe mew put toy mouse in food bowl run out of litter box at full speed . Flee in terror at cucumber discovered on floor cough furball. Leave hair everywhere sleep nap for leave fur on owners clothes. Chase ball of string. Kitty loves pigs kitty power! , or stare at the wall, play with food and get confused by dust, under the bed. Nap all day. Inspect anything brought into the house lick butt and make a weird face yet curl into a furry donut or howl uncontrollably for no reason, why must they do that. Mew human give me attention meow or stares at human while pushing stuff off a table lounge in doorway yet always hungry under the bed. Inspect anything brought into the house run in circles, spread kitty litter all over house for pee in the shoe sleep on keyboard, yet eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap. Put toy mouse in food bowl run out of litter box at full speed hide from vacuum cleaner. Hiss at vacuum cleaner unwrap toilet paper but scratch leg; meow for can opener to feed me damn that dog , sleep nap purr for no reason.
-      </p>
-      </section>
-      </section>
+                Pee in the shoe mew put toy mouse in food bowl run out of litter box at full speed . Flee in terror at cucumber discovered on floor cough furball. Leave hair everywhere sleep nap for leave fur on owners clothes. Chase ball of string. Kitty loves pigs kitty power! , or stare at the wall, play with food and get confused by dust, under the bed. Nap all day. Inspect anything brought into the house lick butt and make a weird face yet curl into a furry donut or howl uncontrollably for no reason, why must they do that. Mew human give me attention meow or stares at human while pushing stuff off a table lounge in doorway yet always hungry under the bed. Inspect anything brought into the house run in circles, spread kitty litter all over house for pee in the shoe sleep on keyboard, yet eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap. Put toy mouse in food bowl run out of litter box at full speed hide from vacuum cleaner. Hiss at vacuum cleaner unwrap toilet paper but scratch leg; meow for can opener to feed me damn that dog , sleep nap purr for no reason.
+              </p>
+            </section>
+          </section>
 
-      <section id="finder" class="tab-content">
-        <h2> Second Section, ID of "finder". Our Food Finder Search Bar, Map, and Content Goes Here</h2>
-        <div>
-          <ul id="filters">
-            <li>
-              <select id="mealtype-filter">
-                <option value="">--Filter by Meal--</option>
-              </select>
-            </li>
-          </ul>
-        </div>
-        <div id="map"></div>
-      </section>
+          <section id="finder" class="tab-content">
+            <div>
+              <ul id="filters">
+                <li>
+                  <select id="mealtype-filter">
+                    <option value="">--Filter by Meal--</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+            <div id="map"></div>
+          </section>
 
-      <section id="resources" class="tab-content">
-        <h2>Third Section, ID of "resources". Our Resources Data Goes Here!</h2>
-      </section>
+          <section id="resources" class="tab-content">
+            <h2>Third Section, ID of "resources". Our Resources Data Goes Here!</h2>
+          </section>
 
 
-      <section id="about" class="tab-content">
-        <h2>Fourth Section, ID of "about". Our About Us Content Goes Here!</h2>
-      </section>
-    </main>
+          <section id="about" class="tab-content">
+            <h2>Fourth Section, ID of "about". Our About Us Content Goes Here!</h2>
+          </section>
+        </main>
 
-    <!-- CDNs -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/jquery.bxslider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9Pjx18wRYcL0GqoAjlM7H4txb88Qr-n8&callback=googleMap.initMap">
-    </script>
-    <!-- more vendor scripts  -->
-    <script src="/vendor/scripts/html5sql.js"></script>
-    <script src="/vendor/scripts/webdb.js"></script>
-    <script src="/vendor/scripts/page.js"></script>
-    <script src="/vendor/scripts/bxslider.js"></script>
+        <!-- CDNs -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/jquery.bxslider.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9Pjx18wRYcL0GqoAjlM7H4txb88Qr-n8&callback=googleMap.initMap">
+      </script>
+      <!-- more vendor scripts  -->
+      <script src="/vendor/scripts/html5sql.js"></script>
+      <script src="/vendor/scripts/webdb.js"></script>
+      <script src="/vendor/scripts/page.js"></script>
+      <!-- <script src="/vendor/scripts/bxslider.js"></script> -->
 
-    <!-- our scripts -->
-    <script src="/scripts/maps.js"></script>
-    <script src="/scripts/mealData.js"></script>
-    <script src="/scripts/mealView.js"></script>
-    <script src="/scripts/mealController.js"></script>
-    <script src="/scripts/resourcesController.js"></script>
-    <script src="/scripts/aboutController.js"></script>
-    <script src="/scripts/routes.js"></script>
-    <!-- <script>
-
-    Meal.fetchAll();
-    mealView.initIndexPage();
-
-    </script> -->
-
-  </body>
+      <!-- our scripts -->
+      <script src="/scripts/maps.js"></script>
+      <script src="/scripts/mealData.js"></script>
+      <script src="/scripts/mealView.js"></script>
+      <script src="/scripts/mealController.js"></script>
+      <script src="/scripts/resourcesController.js"></script>
+      <script src="/scripts/aboutController.js"></script>
+      <script src="/scripts/routes.js"></script>
+    </body>
 </html>

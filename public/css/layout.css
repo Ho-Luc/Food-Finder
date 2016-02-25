@@ -46,7 +46,7 @@ justify-content: space-between;;
 .mission-statement {
 height: 25em;
 width: 25em;
-background: url("vendor/imgs/food2.jpg");
+/*background: url("vendor/imgs/food2.jpg");*/
 z-index: -1;
 }
 .main_banner li {
@@ -66,7 +66,7 @@ z-index: -1;
 .mission-statement {
 height: 25em;
 width: 25em;
-background: url("vendor/imgs/food2.jpg");
+/*background: url("vendor/imgs/food2.jpg");*/
 z-index: -1;
 }
 

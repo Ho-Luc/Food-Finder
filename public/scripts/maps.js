@@ -1,8 +1,8 @@
-(function(module) {
+// (function(module) {
   var googleMap = {};
   var latLngArray = [];
   var markers = [];
-  var addressArray = ['4201 Letitia Ave S', '511 Boren Ave N, Seattle, WA 98109', '400 Broad St, Seattle, WA 98109']; //place holder array until we get JSON addresses
+  // var addressArray = ['4201 Letitia Ave S', '511 Boren Ave N, Seattle, WA 98109', '400 Broad St, Seattle, WA 98109']; //place holder array until we get JSON addresses
   var map;
 
   googleMap.initMap = function() {
@@ -17,7 +17,7 @@
       var marker = new google.maps.Marker({
         position: val.results[0].geometry.location,
         map: map,
-        title: 'Food banks'
+        title: mealView.filteredData.programName
       });
       console.log(val.results[0].geometry.location);
     });
@@ -26,22 +26,19 @@
   //this function grabs an array of addresses and turns them into geocoordinates. LIMIT 10 PER REQUEST!
   googleMap.requestGeocoding = function(callback) {
     latLngArray.length = 0; //clears array of objects
-    $.each(addressArray, function(idx, val){
+    $.each(mealView.filteredData, function(idx, val){
       $.getJSON({
         url : 'https:maps.googleapis.com/maps/api/geocode/json',
         data : {
           sensor: false,
-          address: val
+          address: val.address
         },
         success : function(data) {
-          console.log('success! the data is: ', data);
           latLngArray.push(data); //on success, pushes to helper var array at top.
         }
       });
     });
   };
-  // googleMap.requestGeocoding();
-  // googleMap.addMarkers();
 
-  module.googleMap = googleMap;
-})(window);
+//   module.googleMap = googleMap;
+// })(window);
