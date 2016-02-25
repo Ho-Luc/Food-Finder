@@ -3,11 +3,13 @@
   var latLngArray = [];
   var markers = [];
   var map;
+  var infoWindow = new google.maps.InfoWindow();
+  var latlngbounds = new google.maps.LatLngBounds();
 
   googleMap.initMap = function() {
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 47.6097, lng: -122.3331},
-      zoom: 11
+      zoom: 13
     });
   };
 
