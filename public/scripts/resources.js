@@ -24,13 +24,6 @@
   };
 
 
-  //   // Correct the SQL to delete all records from the meals table.
-  Resources.truncateTable = function(callback) {
-    webDB.execute(
-      'DELETE FROM resourceTable;',
-      callback
-    );
-  };
   // Insert a meal instance into the database:
   Resources.prototype.insertRecord = function(callback) {
     webDB.execute(
@@ -38,19 +31,6 @@
         {
           'sql': 'INSERT INTO resourceTable (name, category, location, hours) VALUES (?, ?, ?, ?);',
           'data': [this.name, this.category, this.location, this.hours],
-        }
-      ],
-      callback
-    );
-  };
-
-  // Delete a meal instance from the database:
-  Resources.prototype.deleteRecord = function(callback) {
-    webDB.execute(
-      [
-        {
-          'sql': 'DELETE FROM resourceTable WHERE id = ?;',
-          'data': [this.id]
         }
       ],
       callback
