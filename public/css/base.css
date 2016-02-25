@@ -11,8 +11,6 @@ body {
   background-image: url("../vendor/imgs/chalk2.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: 0.6;
-  background-color: white ;
   font-family: 'Viga', sans-serif;
   padding: 3em;
   position: relative;
