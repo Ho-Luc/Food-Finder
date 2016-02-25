@@ -9,12 +9,6 @@
     this.id = opts.id;
   }
 
-  // function Meal (opts) {
-  //   Object.keys(ops).forEach(function(e, index, keys) {
-  //     this[e] = opts[e];
-  //   }, this);
-  // }
-
   Meal.all = [];
 
 
@@ -123,20 +117,7 @@
   Meal.allMeals = function(callback) {
     webDB.execute('SELECT DISTINCT mealType FROM finder', callback);
   };
-  // the function above does the same thing using sql
-  // synchronously returns a unique array of meals(breakfast, lunch, etc)
-  // Meal.allMeals = function() {
-  //   return Meal.all.map(function(mealz) {
-  //     return mealz.mealTypes;
-  //   })
-  //   .reduce(function(meals, meal) {
-  //     if (meals.indexOf(meal) === -1) {
-  //       meals.push(meal);
-  //     }
-  //     return meals;
-  //
-  //   }, []);
-  // };
+
 
   module.Meal = Meal;
 })(window);

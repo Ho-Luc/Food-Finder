@@ -21,15 +21,5 @@ mealController.loadAll = function(ctx, next) {
   }
 };
 
-// mealController.loadByMealType = function(ctx, next){
-//   console.log('controller running');
-//   var mealData = function(meal){
-//     ctx.mealz = meal;
-//     next();
-//   };
-//   Meal.findWhere('mealType', whatwasselected, mealData);
-// }
-
-
  module.mealController = mealController;
 })(window);
