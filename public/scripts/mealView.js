@@ -45,7 +45,7 @@
     });
 
     mealView.filteredData.forEach(function(y){
-      $('#finder').append(render(y));
+      $('.output').append(render(y));
     });
 
     googleMap.requestGeocoding(mealView.filteredData);
