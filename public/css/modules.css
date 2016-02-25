@@ -98,7 +98,6 @@ div.bx-viewport {
 }
 
 
-/*media queries*/
 @media only screen and (min-width: 640px) {
   .icon-menu {
     display: none;
