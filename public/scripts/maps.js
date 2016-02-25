@@ -40,8 +40,8 @@
       });
     });
   };
-  googleMap.requestGeocoding();
-  googleMap.addMarkers();
+  // googleMap.requestGeocoding();
+  // googleMap.addMarkers();
 
   module.googleMap = googleMap;
 })(window);

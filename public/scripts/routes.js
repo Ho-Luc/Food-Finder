@@ -1,8 +1,20 @@
-// page('/', homeController.index);
-//
-page('/finder', mealController.index );
-page('/resources', resourcesController.index);
-page('/about', aboutController.index);
+page('/',
+  mealController.loadAll,
+  mealController.index);
+
+// page('/finder',
+//   mealController.loadAll,
+//   mealController.index );
+
+page('/resources',
+  resourcesController.index);
+page('/about',
+  aboutController.index);
+
+//by filter
+// page('/finder/:mealType',
+//   mealController.loadByMealType,
+//   mealController.index);
 
 page();
 
