@@ -2,7 +2,7 @@
 
   var homeController = {};
 
-  homeController.index = function() {
+  homeController.index = function(ctx, next) {
     $('main > section').hide();
     $('#home').show();
   }
