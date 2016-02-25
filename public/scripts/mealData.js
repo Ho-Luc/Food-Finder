@@ -17,10 +17,7 @@
 
   Meal.all = [];
 
-  // Meal.prototype.toHtml = function() {
-  //   var template = Handlebars.compile($('#mealtype-filter').text());
-  //   return template(this);
-  // };
+
 
   // Set up a DB table for meal json data.
   Meal.createTable = function(callback) {
