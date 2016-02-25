@@ -1,53 +1,57 @@
 (function(module) {
+  var mealView = {};
+  mealView.filteredData = [];
 
-var mealView = {};
+  var render = function(mealz) {
+    var template = Handlebars.compile($('#meal-template').text());
+    return template(mealz);
+  }
 
+  mealView.populateFilters = function(){
+    var template = Handlebars.compile($('#option-template').text());
 
- mealView.populateFilters = function(){
-   $('article').each(function() {
-     if (!$(this).hasClass('template')) {
-       var val = $(this).find('li h4').text();
-       var optionTag = '<option value="' + val + '">' + val + '</option>';
-       $('#mealtype-filter').append(optionTag);
-
-
-     };
-   });
-
-   mealView.handleMealFilter = function() {
-       $('#mealtype-filter').on('change', function() {
-         if ($(this).val()) {
-           $('article').hide();
-           $('article[data-category="' + $(this).val() + '"]').fadeIn();
-         } else {
-           $('article').fadeIn();
-           $('article.template').hide();
-         }
-         $('#mealtype-filter').val('');
-       });
-     };
-
-     mealView.handleMainNav = function() {
-    $('.main-nav').on('click', '.tab', function(e) {
-      $('.tab-content').hide();
-      $('#' + $(this).data('content')).fadeIn();
+    Meal.allMeals(function(rows){
+      if($('#mealtype-filter option').length < 2) {
+        $('#mealtype-filter').append(
+          rows.map(function(row) {
+            return template({val: row.mealType});
+          })
+        )
+      }
     });
+  }
 
-    $('.main-nav .tab:first').click();
+  mealView.handleMealFilter = function() {
+    $('#mealtype-filter').one('change', 'select', function() {
+      resource = this.id.replace('-filter', '');
+      page('/' + resource + '/' + $(this).val().replace(/\W+/g, '+'));
+    });
   };
 
-  mealView.initIndexPage = function() {
-    Meal.all.forEach(function(a){
-      $('#finder').append(a.toHtml())
-    });
+  mealView.index = function(mealz) {
+    $('#finder').show().siblings().hide();
 
     mealView.populateFilters();
     mealView.handleMealFilter();
-    mealView.handleMainNav();
+  }
 
-  };
+  //on filter change
+  $('#mealtype-filter').on('change', function(){
+    $('#finder article').remove();
+    var filterOpt = $(this).val();
 
-};
+    mealView.filteredData = Meal.all.filter(function(obj){
+      return obj.mealType == filterOpt;
+    });
+
+    mealView.filteredData.forEach(function(y){
+      $('#finder').append(render(y));
+    });
+
+    googleMap.requestGeocoding(mealView.filteredData);
+    googleMap.addMarkers();
+
+  });
 
 module.mealView = mealView;
 })(window);
