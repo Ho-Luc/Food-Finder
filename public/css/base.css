@@ -1,6 +1,6 @@
-* {
+/** {
    border: 1px solid red !important;
-}
+}*/
 
 
 img {
@@ -8,28 +8,31 @@ img {
 }
 
 body {
-  background-image: url("/vendor/imgs/food-sampling.jpg");
+  background-image: url("../vendor/imgs/chalk2.jpg");
+  background-position: center;
+  background-size: cover;
   background-attachment: 0.6;
+  background-color: white ;
   font-family: 'Viga', sans-serif;
-  padding: 1em;
+  padding: 3em;
+  position: relative;
+  z-index: -2;
   }
 
 main {
-  /*background-color: rgba(247,234,200, 0.7);*/
   height: inherit;
   width: auto;
   margin: 0;
     }
 
-
-
-.main-nav li {
-  color: rgb(247,234,200);
-  margin-right: 8vw;
-  padding-left: 1em;
-  font-size: 1.5em;
-    }
-
+footer {
+    padding: 1em;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    opacity: 0.8;
+}
 
 
 a { text-decoration: none; color: white; }
