@@ -21,15 +21,14 @@
 
 .main-nav {
   display: flex;
-  margin-top: 1vw;
   justify-content: center;
-  margin-bottom: 1vw;
-  padding: 2em;
+  padding-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 .main-nav li {
-  margin-right: 8vw;
-  padding-left: 1em;
+
+  padding-left: 3%;
   font-size: 1.5em;
 }
 
@@ -67,7 +66,7 @@
   z-index: -1;
 }
 
-/*.bx-wrapper {
+.bx-wrapper {
   margin-top: 2em;
 }
 
@@ -84,7 +83,7 @@
 .bx-wrapper .bx-pager {
     font-size: 1em;
     padding-top: 2em;
-}*/
+}
 
 .mission-statement {
   height: 25em;
@@ -138,27 +137,26 @@
 }
 
 #mealtype-filter {
-  padding: 2em;
   justify-content: center;
   background-color: rgba(31,218,154, 0.7);
   height: 55px;
 }
 
 #map {
-  margin-top: 55px;
-  /*flex-direction: row;*/
-  height: 50em;
-  width: 50em;
-  max-width: 100%;
-  max-height: 100%;
+  margin-top: 70px;
+  flex-direction: row;
+  height: 500px;
+  width: 500px;
+  /*max-width: 100%;
+  max-height: 50%;*/
 }
 
 .output {
   color: white;
   padding: 1em;
   justify-content: center;;
-  width: 40em;
-  height:40em;
+  width: 40%;
+  height:40%;
   padding-left: 3em;
   overflow: auto;
 

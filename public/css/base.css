@@ -1,6 +1,6 @@
-/** {
+* {
    outline: 1px solid red !important;
-}*/
+}
 
 
 img {
@@ -12,7 +12,7 @@ body {
   background-position: center;
   background-size: cover;
   font-family: 'Viga', sans-serif;
-  padding: 3em;
+  padding: 1%;
   position: relative;
   z-index: -2;
 }
