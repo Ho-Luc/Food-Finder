@@ -1,49 +1,49 @@
 (function(module) {
- //
- // function Meal (opts) {
- //   this.mealType = opts.mealType;
- //   this.address = opts.address;
- //   this.peopleServed = opts.peopleServed;
- //   this.timesOpen = opts.timesOpen;
- //   this.programName = opts.programName;
- //   this.id = opts.id;
- // }
 
-function Meal (opts) {
-  Object.keys(ops).forEach(function(e, index, keys) {
-    this[e] = opts[e];
-  }, this);
-}
+  function Meal (opts) {
+    this.mealType = opts.mealType;
+    this.address = opts.address;
+    this.peopleServed = opts.peopleServed;
+    this.timesOpen = opts.timesOpen;
+    this.programName = opts.programName;
+    this.id = opts.id;
+  }
 
-Meal.all = [];
+  // function Meal (opts) {
+  //   Object.keys(ops).forEach(function(e, index, keys) {
+  //     this[e] = opts[e];
+  //   }, this);
+  // }
 
-// Meal.prototype.toHtml = function() {
-//   var template = Handlebars.compile($('#mealtype-filter').text());
-//   return template(this);
-// };
+  Meal.all = [];
 
-// Set up a DB table for meal json data.
-Meal.createTable = function(callback) {
-  webDB.execute(
-    'CREATE TABLE IF NOT EXISTS finder (' +
-    'id INTEGER PRIMARY KEY, ' +
-    'mealType VARCHAR(255) NOT NULL, ' +
-    'address VARCHAR(255) NOT NULL, ' +
-    'timesOpen VARCHAR(255) NOT NULL, ' +
-    'peopleServed VARCHAR(255) NOT NULL, ' +
-    'programName VARCHAR(255) NOT NULL);',
-    callback
+  // Meal.prototype.toHtml = function() {
+  //   var template = Handlebars.compile($('#mealtype-filter').text());
+  //   return template(this);
+  // };
+
+  // Set up a DB table for meal json data.
+  Meal.createTable = function(callback) {
+    webDB.execute(
+      'CREATE TABLE IF NOT EXISTS finder (' +
+      'id INTEGER PRIMARY KEY, ' +
+      'mealType VARCHAR(255) NOT NULL, ' +
+      'address VARCHAR(255) NOT NULL, ' +
+      'timesOpen VARCHAR(255) NOT NULL, ' +
+      'peopleServed VARCHAR(255) NOT NULL, ' +
+      'programName VARCHAR(255) NOT NULL);',
+      callback
     );
   };
 
-//   // Correct the SQL to delete all records from the meals table.
+  //   // Correct the SQL to delete all records from the meals table.
   Meal.truncateTable = function(callback) {
-  webDB.execute(
-    'DELETE FROM finder;',
-    callback
-  );
-};
-// Insert a meal instance into the database:
+    webDB.execute(
+      'DELETE FROM finder;',
+      callback
+    );
+  };
+  // Insert a meal instance into the database:
   Meal.prototype.insertRecord = function(callback) {
     webDB.execute(
       [
@@ -57,7 +57,7 @@ Meal.createTable = function(callback) {
   };
 
   // Delete a meal instance from the database:
-    Meal.prototype.deleteRecord = function(callback) {
+  Meal.prototype.deleteRecord = function(callback) {
     webDB.execute(
       [
         {
@@ -74,9 +74,9 @@ Meal.createTable = function(callback) {
     webDB.execute(
       [
         {
-        'sql': 'UPDATE finder SET mealType = ?, address = ?, timesOpen = ?, peopleServed = ?, programName = ?,  WHERE id = ?;',
-        'data': [this.mealType, this.address, this.timesOpen, this.peopleServed, this.programName, this.id],
-      }
+          'sql': 'UPDATE finder SET mealType = ?, address = ?, timesOpen = ?, peopleServed = ?, programName = ?,  WHERE id = ?;',
+          'data': [this.mealType, this.address, this.timesOpen, this.peopleServed, this.programName, this.id],
+        }
       ],
       callback
     );
@@ -111,19 +111,35 @@ Meal.createTable = function(callback) {
     });
   };
 
-// returns a unique array of meals(breakfast, lunch, etc)
-Meal.allMeals = function() {
-  return Meal.all.map(function(mealz) {
-    return mealz.mealTypes;
-})
-  .reduce(function(meals, meal) {
-    if (meals.indexOf(meal) === -1) {
-      meals.push(meal);
-    }
-    return meals;
+  Meal.findWhere = function(field, value, callback) {
+    webDB.execute(
+      [
+        {
+          sql: 'SELECT * FROM finder WHERE ' + field + ' = ?;',
+          data: [value]
+        }
+      ],
+      callback
+    );
+  };
 
-  }, []);
-};
+  Meal.allMeals = function(callback) {
+    webDB.execute('SELECT DISTINCT mealType FROM finder', callback);
+  };
+  // the function above does the same thing using sql
+  // synchronously returns a unique array of meals(breakfast, lunch, etc)
+  // Meal.allMeals = function() {
+  //   return Meal.all.map(function(mealz) {
+  //     return mealz.mealTypes;
+  //   })
+  //   .reduce(function(meals, meal) {
+  //     if (meals.indexOf(meal) === -1) {
+  //       meals.push(meal);
+  //     }
+  //     return meals;
+  //
+  //   }, []);
+  // };
 
   module.Meal = Meal;
 })(window);

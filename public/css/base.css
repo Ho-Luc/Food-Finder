@@ -1,10 +1,36 @@
-#map {
-  height: 400px;
-  width: 500px;
+* {
+   border: 1px solid red !important;
 }
-/*html, body {
+
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-image: url("/vendor/imgs/food-sampling.jpg");
+  background-attachment: 0.6;
+  font-family: 'Viga', sans-serif;
+  padding: 1em;
+  }
+
+main {
+  /*background-color: rgba(247,234,200, 0.7);*/
+  height: inherit;
+  width: auto;
   margin: 0;
-  padding: 0;
-  height: 500px;;
-  width: 600px;
-}*/
+    }
+
+
+
+.main-nav li {
+  color: rgb(247,234,200);
+  margin-right: 8vw;
+  padding-left: 1em;
+  font-size: 1.5em;
+    }
+
+
+
+a { text-decoration: none; color: white; }
+.clearfix { clear: both;}
