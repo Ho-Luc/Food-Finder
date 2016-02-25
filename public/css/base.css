@@ -1,6 +1,6 @@
-/** {
+* {
    border: 1px solid red !important;
-}*/
+}
 
 
 img {
@@ -17,23 +17,26 @@ body {
   padding: 3em;
   position: relative;
   z-index: -2;
-  }
+}
 
 main {
   height: inherit;
   width: auto;
   margin: 0;
-    }
-
-footer {
-    padding: 1em;
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-    opacity: 0.8;
 }
 
+footer {
+  padding: 1em;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+}
 
 a { text-decoration: none; color: white; }
 .clearfix { clear: both;}

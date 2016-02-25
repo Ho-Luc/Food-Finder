@@ -16,20 +16,20 @@
     <link rel="stylesheet" href="/css/modules.css">
 
     <!--handlebars script tag here-->
+
   <script id="meal-template" type="text/x-handlebars-template">
-    <article class="clearfix" data-category="{{mealType}}">
-      <header>
-        <h1>{{ProgramName}}</h1>
-        <div class="byline">
-          Located at: <address>{{address}}</address>
-        </header>
-        </div>
-        People Served: {{peopleServed}}
-        <h3>Days & Times Served</h3>
-        <ul>
-          <li><h4><strong>{{mealType}}</strong></h4> is served {{timesOpen}}</li>
+    <div class="scroll">
+    <article data-category="{{mealType}}">
+      <h3>{{programName}}</h3>
+          <ul>
+          <li><address><em>{{address}}</em></address></li>
+          <li>People Served: {{peopleServed}}</li>
+          <li>{{mealType}} times: {{timesOpen}}</li>
         </ul>
+          <br>
+
 </article>
+</div>
     </script>
     <script id="option-template" type="text/x-handlebars-template">
       <option value="{{val}}">{{val}}</option>
@@ -76,18 +76,24 @@
         </ul>
     </section>
     <section id="finder" class="tab-content">
-        <h2> Second Section, ID of "finder". Our Food Finder Search Bar, Map, and Content Goes Here</h2>
+      <h5> Meals </h5>
+
         <div>
+
           <ul id="filters">
             <li>
               <select id="mealtype-filter">
+
                 <option value="">--Filter by Meal--</option>
               </select>
+              <div class="output">
             </li>
           </ul>
+</div>
         </div>
         <div id="map"></div>
       </section>
+
 
       <section id="resources" class="tab-content">
         <h2>Third Section, ID of "resources". Our Resources Data Goes Here!</h2>
