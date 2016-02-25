@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' type='image/x-icon' href="/vendor/imgs/favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|ABeeZee|Viga|Courgette' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/jquery.bxslider.css" />
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/jquery.bxslider.min.js"></script>
-
+    <!-- <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/jquery.bxslider.css" /> -->
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/jquery.bxslider.min.js"></script> -->
     <link rel="stylesheet" href="/css/reset.css">
     <!-- <link rel="stylesheet" href="/css/icons.css"> -->
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/modules.css">
+
 
     <!--handlebars script tag here-->
 
@@ -30,23 +31,33 @@
 
 </article>
 </div>
+
     </script>
+
+    <script id="resources-template" type="text/x-handlebars-template">
+      <article data-category="{{category}}">
+        <h3>{{name}}</h3>
+        <p>{{location}}</p>
+        <p>{{hours}}</p>
+      </article>
+    </script>
+
     <script id="option-template" type="text/x-handlebars-template">
       <option value="{{val}}">{{val}}</option>
     </script>
   </head>
-  <body>
 
+  <body>
     <header class="site-header">
       <section class="heading-group-h1">
-      <h1>Logo</h1>
-      <br>
+        <h1>Logo</h1>
+        <br>
         <h2>Food is just around the corner</h2>
-          </section>
+      </section>
     </header>
 
     <nav class="main-nav">
-    <img src="vendor/imgs/menu.svg" class="icon-menu">
+      <img src="vendor/imgs/menu.svg" class="icon-menu">
       <ul class="hvr-push">
         <li class="tab" data-content=""><a href="/">Home</a></li>
         <li class="tab" data-content=""><a href="/finder">Food Finder</a></li>
@@ -54,21 +65,22 @@
         <li class="tab" data-content=""><a href="/about">About Us</a></li>
       <ul>
     </nav>
-    <main>
-      <section id="home" class="tab-content">
-        <ul class="slider">
-        <section class="mission-statement">
-          <li><img class="main_banner" src="/vendor/imgs/food-sampling.jpg" />
-            <h3>Mission Statement</h3>
-            <p>Cat ipsum dolor sit amet, meow all night having their mate disturbing sleeping humans for lick butt. Bathe private parts with tongue then lick owner's face make meme, make cute face.
-            </p>
-          </li>
-          </section>
-          <section class="finder-statement">
-          <li><img class="main_banner" src="/vendor/imgs/plate10.jpg" />
-            <h3>Find Hot Meals In Your Neighborhood</h3>
+        <main>
+          <section id="home" class="tab-content">
+            <ul class="slider">
+              <section class="mission-statement">
+                <li><img class="main_banner" src="/vendor/imgs/food-sampling.jpg" />
+                  <h3>Mission Statement</h3>
+                  <p>Cat ipsum dolor sit amet, meow all night having their mate disturbing sleeping humans for lick butt. Bathe private parts with tongue then lick owner's face make meme, make cute face.
+                  </p>
+                </li>
+              </section>
+              <section class="finder-statement">
+                <li><img class="main_banner" src="/vendor/imgs/plate10.jpg" />
+                  <h3>Find Hot Meals In Your Neighborhood</h3>
 
-            <a href="/finder">Start looking for meals..</a>
+                  <a href="/finder">Start looking for meals..</a>
+
 
           </li>
         </section>
@@ -91,39 +103,48 @@
 
       </section>
 
+            <section id="resources" class="tab-content">
+              <div>
+                <ul>
+                  <li>
+                    <select id="resources-filter">
+                      <option value="">--Additional Resources--</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </section>
 
-      <section id="resources" class="tab-content">
-        <h2>Third Section, ID of "resources". Our Resources Data Goes Here!</h2>
-      </section>
+            <section id="about" class="tab-content">
+              <h2>Fourth Section, ID of "about". Our About Us Content Goes Here!</h2>
+            </section>
+          </main>
 
+          <!-- CDNs -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+          <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/jquery.bxslider.min.js"></script> -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9Pjx18wRYcL0GqoAjlM7H4txb88Qr-n8&callback=googleMap.initMap">
+          </script>
+          <!-- more vendor scripts  -->
+          <script src="/vendor/scripts/html5sql.js"></script>
+          <script src="/vendor/scripts/webdb.js"></script>
+          <script src="/vendor/scripts/page.js"></script>
+          <!-- <script src="/vendor/scripts/bxslider.js"></script> -->
 
-      <section id="about" class="tab-content">
-        <h2>Fourth Section, ID of "about". Our About Us Content Goes Here!</h2>
-      </section>
-    </main>
+          <!-- our scripts -->
+          <script src="/scripts/maps.js"></script>
+          <script src="/scripts/mealData.js"></script>
+          <script src="/scripts/resources.js"></script>
+          <script src="/scripts/mealView.js"></script>
+          <script src="/scripts/homeController.js"></script>
+          <script src="/scripts/mealController.js"></script>
+          <script src="/scripts/resourcesController.js"></script>
+          <script src="/scripts/resourcesView.js"></script>
+          <script src="/scripts/aboutController.js"></script>
+          <script src="/scripts/routes.js"></script>
 
-    <!-- CDNs -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/jquery.bxslider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9Pjx18wRYcL0GqoAjlM7H4txb88Qr-n8&callback=googleMap.initMap">
-    </script>
-    <!-- more vendor scripts  -->
-    <script src="/vendor/scripts/html5sql.js"></script>
-    <script src="/vendor/scripts/webdb.js"></script>
-    <script src="/vendor/scripts/page.js"></script>
-    <script src="/vendor/scripts/bxslider.js"></script>
-
-    <!-- our scripts -->
-    <script src="/scripts/maps.js"></script>
-      <script src="/scripts/mealData.js"></script>
-      <script src="/scripts/mealView.js"></script>
-      <script src="/scripts/mealController.js"></script>
-      <script src="/scripts/resourcesController.js"></script>
-      <script src="/scripts/aboutController.js"></script>
-      <script src="/scripts/routes.js"></script>
-
-  </body>
-  <footer>&copy; 2016 Food Finder | Seattle, WA | 206-999-8989 | info@foodfinder.</footer>
-</html>
+        <footer>&copy; 2016 Food Finder | Seattle, WA | 206-999-8989 | info@foodfinder.</footer>
+    </body>
+  </html>
