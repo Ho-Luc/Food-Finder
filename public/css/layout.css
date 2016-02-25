@@ -51,10 +51,9 @@
   background-color: blue;
 }
 
-/*.bx-wrapper .bx-loading {
-  background-image: ;
+.bx-wrapper .bx-loading {
   position: relative;
-}*/
+}
 
 .slider li {
   width: auto;
@@ -133,15 +132,21 @@
   display: flex;
 }
 
+#filter-box {
+  display: inline-block;
+  position: absolute;
+}
+
 #mealtype-filter {
-  flex-direction: column-reverse;;
   padding: 2em;
   justify-content: center;
   background-color: rgba(31,218,154, 0.7);
-  height: 2em;
+  height: 55px;
 }
+
 #map {
-  flex-direction: row;
+  margin-top: 55px;
+  /*flex-direction: row;*/
   height: 50em;
   width: 50em;
   max-width: 100%;
