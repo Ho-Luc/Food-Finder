@@ -15,21 +15,23 @@
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/modules.css">
 
-    <!--handlebars scripts tag here-->
-    <script id="meal-template" type="text/x-handlebars-template">
-      <article class="clearfix" data-category="{{mealType}}">
-        <header>
-          <h1>{{programName}}</h1>
-          <div class="byline">
-            Located at: <address>{{address}}</address>
-          </header>
-        </div>
-        People Served: {{peopleServed}}
-        <h3>Days & Times Served</h3>
-        <ul>
-          <li><h4><strong>{{mealType}}</strong></h4> is served {{timesOpen}}</li>
+
+    <!--handlebars script tag here-->
+
+  <script id="meal-template" type="text/x-handlebars-template">
+    <div class="scroll">
+    <article data-category="{{mealType}}">
+      <h3>{{programName}}</h3>
+          <ul>
+          <li><address><em>{{address}}</em></address></li>
+          <li>People Served: {{peopleServed}}</li>
+          <li>{{mealType}} times: {{timesOpen}}</li>
         </ul>
-      </article>
+          <br>
+
+</article>
+</div>
+
     </script>
 
     <script id="resources-template" type="text/x-handlebars-template">
@@ -79,24 +81,27 @@
 
                   <a href="/finder">Start looking for meals..</a>
 
-                </li>
-              </section>
-              <li><img class="main_banner" src="https://placeholdit.imgix.net/~text?txtsize=90&bg=000000&txt=960%C3%97450&w=960&h=450" /></li>
-            </ul>
-          </section>
 
-            <section id="finder" class="tab-content">
-              <div>
-                <ul id="filters">
-                  <li>
-                    <select id="mealtype-filter">
-                      <option value="">--Filter by Meal--</option>
-                    </select>
-                  </li>
-                </ul>
-              </div>
-              <div id="map"></div>
-            </section>
+          </li>
+        </section>
+          <li><img class="main_banner" src="https://placeholdit.imgix.net/~text?txtsize=90&bg=000000&txt=960%C3%97450&w=960&h=450" /></li>
+        </ul>
+    </section>
+    <section id="finder" class="tab-content">
+      <h5> Meals </h5>
+      <ul id="filters">
+            <li>
+              <select id="mealtype-filter">
+
+                <option value="">--Filter by Meal--</option>
+              </select>
+            </li>
+          </ul>
+
+        <div id="map"></div>
+          <div class="output"></div>
+
+      </section>
 
             <section id="resources" class="tab-content">
               <div>

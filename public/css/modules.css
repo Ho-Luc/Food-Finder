@@ -10,9 +10,9 @@
 
 @-webkit-keyframes hvr-push {
   50% {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
 
   100% {
     -webkit-transform: scale(1);
@@ -69,14 +69,13 @@ div.bx-viewport {
     text-indent: 0px;
     font-size: 3em;
     padding: 0 ;
-    /*z-index: 999;*/
 }
 
 .bx-wrapper .bx-controls-direction .bx-next  {
    display: flex;
    justify-content: flex-end;
-
 }
+
 .bx-wrapper .bx-controls-direction .bx-prev  {
    display: flex;
    justify-content: flex-start;
