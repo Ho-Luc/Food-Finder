@@ -9,6 +9,7 @@
 
   resourcesView.populateFilter = function() {
     var template = Handlebars.compile($('#option-template').text());
+
     Resources.allResources(function(rows){
       if($('#resources-filter option').length < 2) {
         $('#resources-filter').append(
@@ -20,17 +21,17 @@
     });
   },
 
-  resourcesView.handleResourceFilter = function() {
+  resourcesView.handleResourcesFilter = function() {
     $('#resources-filter').one('change', 'select', function() {
-      resource = this.id.replace('-filter', '');
-      page('/' + resource + '/' + $(this).val().replace(/\W+/g, '+'));
+      input = this.id.replace('-filter', '');
+      page('/' + input + '/' + $(this).val().replace(/\W+/g, '+'));
     });
   };
 
   resourcesView.index = function(resources) {
     $('#resources').show().siblings().hide();
 
-    resourcesView.populateFilters();
+    resourcesView.populateFilter();
     resourcesView.handleResourcesFilter();
   }
 
@@ -39,12 +40,12 @@
     $('#resources article').remove();
     var filterOpt = $(this).val();
 
-    resources.filteredData = Resources.all.filter(function(obj){
+    resourcesView.filteredData = Resources.all.filter(function(obj){
       return obj.category == filterOpt;
     });
 
-    resources.filteredData.forEach(function(y){
-      $('#resources').append(render(y));
+    resourcesView.filteredData.forEach(function(y){
+      $('#resources').append(resourcesRender(y));
     });
   });
 

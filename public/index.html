@@ -35,7 +35,7 @@
     <script id="resources-template" type="text/x-handlebars-template">
       <article data-category="{{category}}">
         <h3>{{name}}</h3>
-        <p>{{address}}</p>
+        <p>{{location}}</p>
         <p>{{hours}}</p>
       </article>
     </script>
@@ -83,19 +83,8 @@
               </section>
               <li><img class="main_banner" src="https://placeholdit.imgix.net/~text?txtsize=90&bg=000000&txt=960%C3%97450&w=960&h=450" /></li>
             </ul>
-
           </section>
 
-          <section id="finder" class="tab-content">
-            <div>
-              <ul>
-                <li>
-                  <select id="mealtype-filter">
-                    <option value="">--Filter by Meal--</option>
-                  </select>
-                </li>
-              </ul>
-            </section>
             <section id="finder" class="tab-content">
               <div>
                 <ul id="filters">
@@ -114,7 +103,7 @@
                 <ul>
                   <li>
                     <select id="resources-filter">
-                      <option value="">--Filter by resource--</option>
+                      <option value="">--Additional Resources--</option>
                     </select>
                   </li>
                 </ul>
@@ -144,8 +133,10 @@
           <script src="/scripts/mealData.js"></script>
           <script src="/scripts/resources.js"></script>
           <script src="/scripts/mealView.js"></script>
+          <script src="/scripts/homeController.js"></script>
           <script src="/scripts/mealController.js"></script>
           <script src="/scripts/resourcesController.js"></script>
+          <script src="/scripts/resourcesView.js"></script>
           <script src="/scripts/aboutController.js"></script>
           <script src="/scripts/routes.js"></script>
 

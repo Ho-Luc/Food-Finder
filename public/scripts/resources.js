@@ -13,7 +13,7 @@
   // Set up a DB table for meal json data.
   Resources.createTable = function(callback) {
     webDB.execute(
-      'CREATE TABLE IF NOT EXISTS resourceTable (' +
+      'CREATE TABLE IF NOT EXISTS resourcetable (' +
       'id INTEGER PRIMARY KEY, ' +
       'name VARCHAR(255) NOT NULL, ' +
       'category VARCHAR(255) NOT NULL, ' +
@@ -23,14 +23,32 @@
     );
   };
 
+  Resources.truncateTable = function(callback) {
+    webDB.execute(
+      'DELETE FROM resourcetable;',
+      callback
+    );
+  };
 
   // Insert a meal instance into the database:
   Resources.prototype.insertRecord = function(callback) {
     webDB.execute(
       [
         {
-          'sql': 'INSERT INTO resourceTable (name, category, location, hours) VALUES (?, ?, ?, ?);',
+          'sql': 'INSERT INTO resourcetable (name, category, location, hours) VALUES (?, ?, ?, ?);',
           'data': [this.name, this.category, this.location, this.hours],
+        }
+      ],
+      callback
+    );
+  };
+
+  Resources.prototype.deleteRecord = function(callback) {
+    webDB.execute(
+      [
+        {
+          'sql': 'DELETE FROM resourcetable WHERE id = ?;',
+          'data': [this.id]
         }
       ],
       callback
@@ -42,7 +60,7 @@
     webDB.execute(
       [
         {
-          'sql': 'UPDATE resourceTable SET name = ?,category = ?, location = ?, hours = ?, WHERE id = ?;',
+          'sql': 'UPDATE resourcetable SET name = ?,category = ?, location = ?, hours = ?, WHERE id = ?;',
           'data': [this.name, this.category, this.location, this.hours, this.id],
         }
       ],
@@ -57,7 +75,7 @@
   };
 
   Resources.fetchAll = function(callback) {
-    webDB.execute('SELECT * FROM resourceTable', function(rows) {
+    webDB.execute('SELECT * FROM resourcetable', function(rows) {
       if (rows.length) {
         Resources.loadAll(rows);
         callback();
@@ -68,7 +86,7 @@
             var addedSources = new Resources(morefood);
             addedSources.insertRecord();
           });
-          webDB.execute('SELECT * FROM resourceTable', function(rows) {
+          webDB.execute('SELECT * FROM resourcetable', function(rows) {
             // Now instanitate those rows with the .loadAll function, and pass control to the view.
             Resources.loadAll(rows);
             console.log('fetch');
@@ -83,7 +101,7 @@
     webDB.execute(
       [
         {
-          sql: 'SELECT * FROM resourceTable WHERE ' + field + ' = ?;',
+          sql: 'SELECT * FROM resourcetable WHERE ' + field + ' = ?;',
           data: [value]
         }
       ],
@@ -91,8 +109,8 @@
     );
   };
 
-  Resources.allMeals = function(callback) {
-    webDB.execute('SELECT DISTINCT category FROM resourceTable', callback);
+  Resources.allResources = function(callback) {
+    webDB.execute('SELECT DISTINCT category FROM resourcetable', callback);
   };
 
 
