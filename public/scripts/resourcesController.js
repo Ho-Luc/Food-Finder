@@ -1,6 +1,8 @@
 (function(module) {
   resourcesController = {};
 
+  Resources.createTable();
+
   resourcesController.index = function(ctx, next) {
     $('main > section').hide();
     resourcesView.index(ctx.resources);

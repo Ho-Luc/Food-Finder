@@ -51,10 +51,10 @@
   background-color: blue;
 }
 
-.bx-wrapper .bx-loading {
+/*.bx-wrapper .bx-loading {
   background-image: ;
   position: relative;
-}
+}*/
 
 .slider li {
   width: auto;
@@ -68,7 +68,7 @@
   z-index: -1;
 }
 
-.bx-wrapper {
+/*.bx-wrapper {
   margin-top: 2em;
 }
 
@@ -85,7 +85,7 @@
 .bx-wrapper .bx-pager {
     font-size: 1em;
     padding-top: 2em;
-}
+}*/
 
 .mission-statement {
   height: 25em;
