@@ -49,7 +49,7 @@
     });
 
     googleMap.requestGeocoding(mealView.filteredData);
-    googleMap.addMarkers();
+    z
 
   });
 
