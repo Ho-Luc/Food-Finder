@@ -31,12 +31,10 @@
   </script>
 
   <script id="resources-template" type="text/x-handlebars-template">
-    <article id="resources-style" data-category="{{category}}">
-    <ul>
-      <li id="bold-name">{{name}}</li>
-      <li>{{location}}</li>
-      <li>{{hours}}</li>
-    </ul>
+    <article data-category="{{category}}">
+      <h3>{{name}}</h3>
+      <p>{{location}}</p>
+      <p>{{hours}}</p>
     </article>
   </script>
 
@@ -48,13 +46,14 @@
 <body>
   <header class="site-header">
     <section class="heading-group-h1">
-      <h1>Logo</h1>
+      <img class="logo" src="imgs/logo.png"/>
       <br>
     </section>
   </header>
 
   <nav class="main-nav">
-    <div class="icon-menu"></div>
+    <!-- <img src="vendor/imgs/menu.svg" class="icon-menu"> -->
+    <div class = "icon-menu"></div>
     <ul class="hvr-push">
       <li class="tab" data-content=""><a href="/">Home</a></li>
       <li class="tab" data-content=""><a href="/finder">Meal Finder</a></li>
@@ -68,7 +67,7 @@
             <section class="mission-statement">
               <li><img class="main_banner" src="/vendor/imgs/food-sampling.jpg" />
                 <h3>Mission Statement</h3>
-                <p>Cat ipsum dolor sit amet, meow all night having their mate disturbing sleeping humans for lick butt. Bathe private parts with tongue then lick owner's face make meme, make cute face.
+                <p>Our goal is to help food insure Seattleites, easily find meal programs and alternative food resources.
                 </p>
               </li>
             </section>
@@ -96,46 +95,42 @@
         </section>
 
         <section id="resources" class="tab-content">
-
           <div>
-                <p>Farmers Markets & Food Banks<p>
+            <ul>
+              <li>
                 <select id="resources-filter">
                   <option value="">--Additional Resources--</option>
                 </select>
+              </li>
+            </ul>
           </div>
         </section>
 
         <section id="about" class="tab-content">
-          <ul>
-
-  <li class = "about-container">
-
-    <ul class = "about-box">
-    <li classs = "about-contents"><img class = "about-us"  src = "imgs/iris3.jpg"></li>
-       <!-- <li classs = "about-contents">iris</li> -->
-      <li classs = "about-contents">Iris Carrera is a web developer</li><li classs = "about-contents"> based in Seattle</li>
-      </ul>
-     <li class = "about-container">
-  <ul class = "about-box">
-    <li classs = "about-contents"><img class = "about-us" src = "imgs/lisa.jpeg"></li>
-       <!-- <li classs = "about-contents">iris</li> -->
-      <li classs = "about-contents">Lisa Wenke is a web developer </li><li classs = "about-contents">based in Seattle</li>
-      </ul>
-        <li class = "about-container">
-  <ul class = "about-box">
-    <li classs = "about-contents"><img class = "about-us" src = "imgs/Shelly.jpeg"></li>
-       <!-- <li classs = "about-contents">iris</li> -->
-      <li classs = "about-contents">Shelly Yusuf is a web developer </li><li classs = "about-contents">based in Seattle</li>
-      </ul>
-
-
-           <li class = "about-container">
-  <ul class = "about-box">
-    <li classs = "about-contents"><img class = "about-us"  src = "imgs/luc.jpeg"></li>
-       <!-- <li classs = "about-contents">iris</li> -->
-      <li classs = "about-contents">Luc Ho is a web developer</li><li classs = "about-contents"> based in Seattle</li>
-      </ul>
-</ul>
+          <section class="about-content">
+            <div class="about-image">
+              <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" />
+            </div>
+            <p>Lisa info Cat ipsum dolor sit amet, meow all night having their mate disturbing sleeping humans for lick butt. Bathe private parts with tongue then lick owner's face make meme, make cute face.</p>
+          </section>
+          <section class="about-content">
+            <div class="about-image">
+              <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" />
+            </div>
+            <p>Iris Info Cat ipsum dolor sit amet, meow all night having their mate disturbing sleeping humans for lick butt. Bathe private parts with tongue then lick owner's face make meme, make cute face.</p>
+          </section>
+          <section class="about-content">
+            <div class="about-image">
+              <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" />
+            </div>
+            <p>Shelly info Cat ipsum dolor sit amet, meow all night having their mate disturbing sleeping humans for lick butt. Bathe private parts with tongue then lick owner's face make meme, make cute face.</p>
+          </section>
+          <section class="about-content">
+            <div class="about-image">
+              <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" />
+            </div>
+            <p>Luc info Cat ipsum dolor sit amet, meow all night having their mate disturbing sleeping humans for lick butt. Bathe private parts with tongue then lick owner's face make meme, make cute face.</p>
+          </section>
         </section>
       </main>
 
@@ -163,6 +158,6 @@
     <script src="/scripts/aboutController.js"></script>
     <script src="/scripts/routes.js"></script>
 
-    <footer>2016 | Seattle Meal Program Finder | Seattle, WA | Meal Program Data By: Department of Human Services | http://www.seattle.gov/humanservices/  </footer>
+    <footer>&copy; 2016 Food Finder | Seattle, WA | 206-999-8989 | info@foodfinder.</footer>
   </body>
   </html>

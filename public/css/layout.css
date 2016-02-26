@@ -1,9 +1,9 @@
 /*universal page*/
 
 .heading-group-h1 {
-  display: flex;
-  justify-content:center;
-  flex-direction: column;
+  display: inline-block;
+  /*justify-content:center;
+  flex-direction: column;*/
   font-size:2em;
   color:white;
   padding: 1%;
@@ -12,6 +12,17 @@
 
 .heading-group-h1 h1 {
   text-align: center;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  height: 620px;
+  width: 900px;
+  /*padding-left: 40%;
+  padding-right: 40%;*/
+
+
 }
 
 .main-nav {
