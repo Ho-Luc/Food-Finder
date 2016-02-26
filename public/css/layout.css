@@ -153,7 +153,6 @@
   overflow: auto;
 }
 
-/*about page */
 #about {
   display: flex;
   flex-direction: column;
@@ -161,40 +160,17 @@
 .about-content p {
   margin: 0;
   display: flex;
+    justify-content: center;
 }
 .about-image {
-  width 100%;
+  /*width 100%;*/
   display: flex;
   justify-content: center;
-}
-
-.about-contents{
-  display:column;
-  /*margin-right:2%;*/
-    font-size:1em;
-
-}
-
-/*.about-box{
-  border:solid 1px white;
-}*/
-
-.about-container{
-  display:inline-block;
-  list-style:none;
-    color:white;
+  /*background-color: blue;*/
 }
 
 .about-us{
   max-width: 100%;
-  border-radius:50%;
-  height:40%;
-  width:40%;
-}
-
-.about-blurb{
-  font-size:1em;
-
 }
 
 #resources div p {
@@ -228,9 +204,9 @@
     text-align: center;
   }
 
-  #about {
+  /*#about {
    flex-direction: row;
- }
+ }*/
 
  #map {
    margin-top: 4%;
