@@ -3,6 +3,8 @@
   font-size: 3em;
   float: right;
   color:white;
+  display: block;
+  text-align: center;
 }
 
 .main-nav ul{
