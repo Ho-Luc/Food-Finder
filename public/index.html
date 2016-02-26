@@ -31,10 +31,12 @@
   </script>
 
   <script id="resources-template" type="text/x-handlebars-template">
-    <article data-category="{{category}}">
-      <h3>{{name}}</h3>
-      <p>{{location}}</p>
-      <p>{{hours}}</p>
+    <article id="resources-style" data-category="{{category}}">
+    <ul>
+      <li id="bold-name">{{name}}</li>
+      <li>{{location}}</li>
+      <li>{{hours}}</li>
+    </ul>
     </article>
   </script>
 
@@ -52,8 +54,7 @@
   </header>
 
   <nav class="main-nav">
-    <!-- <img src="vendor/imgs/menu.svg" class="icon-menu"> -->
-    <div class = "icon-menu"></div>
+    <div class="icon-menu"></div>
     <ul class="hvr-push">
       <li class="tab" data-content=""><a href="/">Home</a></li>
       <li class="tab" data-content=""><a href="/finder">Meal Finder</a></li>
@@ -95,14 +96,12 @@
         </section>
 
         <section id="resources" class="tab-content">
+
           <div>
-            <ul>
-              <li>
+                <p>Farmers Markets & Food Banks<p>
                 <select id="resources-filter">
                   <option value="">--Additional Resources--</option>
                 </select>
-              </li>
-            </ul>
           </div>
         </section>
 
@@ -158,6 +157,6 @@
     <script src="/scripts/aboutController.js"></script>
     <script src="/scripts/routes.js"></script>
 
-    <footer>&copy; 2016 Food Finder | Seattle, WA | 206-999-8989 | info@foodfinder.</footer>
+    <footer>&copy; 2016 Seattle Meal Program Finder | Seattle, WA </footer>
   </body>
   </html>
