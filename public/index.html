@@ -32,10 +32,12 @@
   </script>
 
   <script id="resources-template" type="text/x-handlebars-template">
-    <article data-category="{{category}}">
-      <h3>{{name}}</h3>
-      <p>{{location}}</p>
-      <p>{{hours}}</p>
+    <article id="resources-style" data-category="{{category}}">
+      <ul>
+        <li id="bold-name">{{name}}</li>
+        <li>{{location}}</li>
+        <li>{{hours}}</li>
+      </ul>
     </article>
   </script>
 
@@ -94,13 +96,10 @@
 
         <section id="resources" class="tab-content">
           <div>
-            <ul>
-              <li>
-                <select id="resources-filter">
-                  <option value="">--Additional Resources--</option>
-                </select>
-              </li>
-            </ul>
+            <p>Farmers Markets & Food Banks</p>
+            <select id="resources-filter">
+              <option value="">--Additional Resources--</option>
+            </select>
           </div>
         </section>
 
