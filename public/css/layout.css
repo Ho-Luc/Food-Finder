@@ -168,6 +168,13 @@
   justify-content: center;
 }
 
+
+.about-us{
+  border-radius:50%;
+  height:100%;
+  width:100%;
+}
+
 @media only screen and (min-width: 640px) {
   .heading-group-h1 {
     display: flex;
