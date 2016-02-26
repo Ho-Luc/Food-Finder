@@ -6,6 +6,10 @@
   float: right;
 }
 
+.hvr-push {
+  flex-direction: column;
+}
+
 /*menu tab push effect*/
 
 @-webkit-keyframes hvr-push {
@@ -94,9 +98,14 @@ div.bx-viewport {
 }
 
 
-
-/*media queries*/
 @media only screen and (min-width: 640px) {
   .icon-menu {
     display: none;
   }
+
+  .hvr-push {
+    flex-direction: row;
+  }
+
+
+}
