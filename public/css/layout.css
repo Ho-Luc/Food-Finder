@@ -69,7 +69,7 @@
 .mission-statement img {
   display: flex;
   justify-content: center;
-  opacity: 0.3;
+  opacity: 0.5;
   position: absolute;
   z-index: -1;
   width:100%;
