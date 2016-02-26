@@ -49,7 +49,8 @@
     });
 
     googleMap.initMap();
-    googleMap.requestGeocoding(mealView.filteredData);
+    googleMap.getLatLong(mealView.filteredData);
+    // googleMap.requestGeocoding(mealView.filteredData);
   });
 
 module.mealView = mealView;
