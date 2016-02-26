@@ -4,10 +4,36 @@
 .icon-menu {
   font-size: 3em;
   float: right;
+  color:white;
+}
+
+.main-nav ul{
+  display:none;
+  padding:0;
+  list-style:none;
+  clear:both;
+}
+
+.main-nav:hover ul{
+  display:list-item;
+}
+
+.main-nav li {
+  margin-right:.4em;
+  font-size: 1.5em;
+  padding: .5em .2em;
 }
 
 .hvr-push {
-  flex-direction: column;
+  display:flex;
+  flex-direction:column;
+
+}
+
+.icon-menu:hover{
+  display: flex;
+  display:column;
+  color:red;
 }
 
 /*menu tab push effect*/
@@ -103,9 +129,19 @@ div.bx-viewport {
     display: none;
   }
 
-  .hvr-push {
+  .main-nav ul{
+    display:flex;
     flex-direction: row;
+    padding:0;
+    list-style:none;
+    clear:both;
   }
 
+
+  .hvr-push {
+    display: flex;
+    flex-direction:row;
+
+  }
 
 }
