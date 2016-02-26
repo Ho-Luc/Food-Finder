@@ -31,10 +31,12 @@
   </script>
 
   <script id="resources-template" type="text/x-handlebars-template">
-    <article data-category="{{category}}">
-      <p>{{name}}</p>
-      <p>{{location}}</p>
-      <p>{{hours}}</p>
+    <article id="resources-style" data-category="{{category}}">
+    <ul>
+      <li id="bold-name">{{name}}</li>
+      <li>{{location}}</li>
+      <li>{{hours}}</li>
+    </ul>
     </article>
   </script>
 
