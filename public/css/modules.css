@@ -87,17 +87,15 @@
   animation-iteration-count: 1;
 }
 
-
-
 /*home page */
 
 /*slider*/
 
-div.bx-viewport {
+/*div.bx-viewport {
     width: 0%;
 }
 .bx-wrapper .bx-controls-direction a {
-    display: flex;
+    display: none;
     width: 3em;
     height: 3em;
     text-indent: 0px;
@@ -127,7 +125,7 @@ div.bx-viewport {
     height: 1em;
     margin: 0 2em;
     border-radius: 2em;
-}
+}*/
 
 
 @media only screen and (min-width: 640px) {
@@ -142,7 +140,6 @@ div.bx-viewport {
     list-style:none;
     clear:both;
   }
-
 
   .hvr-push {
     display: flex;
