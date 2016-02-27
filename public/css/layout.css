@@ -47,9 +47,12 @@
 .main_banner li {
   background-color: blue;
 }
+.mission-statement {
+  position: absolute;
+}
 
 
-.slider li {
+/*.slider li {
   width: auto;
   height:5em;
 }
@@ -137,7 +140,7 @@
     position: absolute;
     z-index: -1;
     width:100%;
-  }
+  }*/
 /*finder page*/
 
 
