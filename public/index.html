@@ -17,7 +17,7 @@
   <script id="meal-template" type="text/x-handlebars-template">
     <div class="scroll">
       <article data-category="{{mealType}}">
-        <h3>{{programName}}</h3>
+        <h3 class="bold-name">{{programName}}</h3>
         <ul>
           <li><address><em>{{address}}</em></address></li>
           <li>People Served: {{peopleServed}}</li>
@@ -33,7 +33,7 @@
   <script id="resources-template" type="text/x-handlebars-template">
     <article id="resources-style" data-category="{{category}}">
       <ul>
-        <li id="bold-name">{{name}}</li>
+        <li class="bold-name">{{name}}</li>
         <li>{{location}}</li>
         <li>{{hours}}</li>
       </ul>
@@ -54,7 +54,7 @@
   </header>
 
   <nav class="main-nav">
-    <div class = "icon-menu"></div>
+    <div class="icon-menu"></div>
     <ul class="hvr-push">
       <li class="tab"><a href="/">Home</a></li>
       <li class="tab"><a href="/finder">Meal Finder</a></li>
@@ -64,13 +64,10 @@
       </nav>
       <main>
         <section id="home" class="tab-content">
-          <section class="mission-statement">
-            <section class="mission-statement-relative">
-              <img class="main_banner" src="/vendor/imgs/food-sampling.jpg" />
-              <h3>Mission Statement</h3>
-              <p>Here at Seattle Meal Program Finder, our goal is to help you find meal programs conveniently in your area. We are dedicated to connecting our community to the best meal resources available in the Seattle area.
-              </p>
-            </section>
+          <section class="site-description">
+              <img src="/vendor/imgs/food-sampling.jpg" />
+              <h1>Connecting you with Meal Programs in the Seattle Area</h1>
+              <h2>Click <a href="/finder">Here</a> to Get Started</h2>
           </section>
         </section>
         <section id="finder" class="tab-content">
@@ -87,7 +84,7 @@
 
         <section id="resources" class="tab-content">
           <div>
-            <p>Farmers Markets & Food Banks</p>
+            <h1 id="resources-header">Farmers Markets & Food Banks</h1>
             <select id="resources-filter">
               <option value="">--Additional Resources--</option>
             </select>
