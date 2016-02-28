@@ -33,14 +33,12 @@
 .icon-menu:hover{
   display: flex;
   display:column;
-  color:red;
 }
 
 #resources-filter {
-  margin-bottom: 10%;
+  margin-bottom: 2%;
 }
 /*menu tab push effect*/
-
 
 @-webkit-keyframes hvr-push {
   50% {
@@ -88,6 +86,39 @@
 }
 
 /*home page */
+.site-description {
+  position: relative;
+}
+
+.site-description h1 {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  font-size: 1.75em;
+  position: relative;
+  z-index: 5;
+  padding-top: 10%;
+}
+
+.site-description h2 {
+  font-weight: bold;
+  text-align: center;
+  color:white;
+  position: relative;
+  z-index: 6;
+  margin-bottom: 20%;
+}
+
+.site-description a {
+  color: blue;
+}
+
+
+.site-description img {
+  position: absolute;
+  border-radius: 2px;
+  opacity: 0.5;
+}
 
 
 @media only screen and (min-width: 640px) {
@@ -109,4 +140,19 @@
 
   }
 
+  .site-description h1 {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    position: relative;
+    z-index: 5;
+    padding-top: 10%;
+    margin-bottom: 4%;
+
+}
+  .site-description h2 {
+    font-size: 2.5em;
+    margin-bottom: 25%;
+  }
 }

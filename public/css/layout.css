@@ -41,16 +41,6 @@
   justify-content: space-between;;
 }
 
-
-/*home page*/
-
-.main_banner li {
-  background-color: blue;
-}
-.mission-statement {
-  position: absolute;
-}
-
 /*finder page*/
 
 
@@ -133,10 +123,20 @@
   text-align: center;
   color:white;
 }
-#bold-name {
+
+
+#resources-header {
+  font-size: 2em;
+  font-weight: bold;
+  color:white;
+  margin-bottom: 1%;
+}
+
+.bold-name {
   text-decoration:underline;
   font-weight:bold;
   font-size: 1.5em;
+  color:white;
 }
 
 /* hotfixes */
