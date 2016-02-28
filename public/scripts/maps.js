@@ -15,7 +15,7 @@
     console.log(latLngArray);
     $.each(latLngArray, function(idx, val){
       var info = new google.maps.InfoWindow({
-        content: mealView.filteredData[idx].timesOpen
+        content: mealView.filteredData[idx].programName + '  Open: ' + mealView.filteredData[idx].timesOpen
       });
 
       var marker = new google.maps.Marker({

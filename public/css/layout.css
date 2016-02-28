@@ -82,10 +82,13 @@
 }
 .about-content p {
   margin: 0;
+  color: white;
   display: flex;
+  padding-bottom:  5 20px;
 }
 .about-image {
   width 100%;
+  padding: 5px;
   display: flex;
   justify-content: center;
 }
@@ -125,7 +128,7 @@
 }
 
 
-#resources-header {
+.resources-header {
   font-size: 2em;
   font-weight: bold;
   color:white;
@@ -153,7 +156,6 @@
   padding-left: 0px;
 }
 
-
 @media only screen and (min-width: 640px) {
 
   .heading-group-h1 h1 {
@@ -161,14 +163,18 @@
   }
 
   #about {
-   flex-direction: row;
- }
+    flex-direction: row;
+  }
 
- #map {
-   margin-top: 4%;
-   margin-bottom: 1%;
-   flex-direction: row;
-   height: 800px;
-   width: 800px;
+  #map {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    flex-direction: row;
+    height: 800px;
+    width: 800px;
+  }
+
+  .about-image {
+    display: block;
   }
 }
