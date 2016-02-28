@@ -33,14 +33,12 @@
 .icon-menu:hover{
   display: flex;
   display:column;
-  color:red;
 }
 
 #resources-filter {
-  margin-bottom: 10%;
+  margin-bottom: 2%;
 }
 /*menu tab push effect*/
-
 
 @-webkit-keyframes hvr-push {
   50% {
@@ -87,46 +85,39 @@
   animation-iteration-count: 1;
 }
 
-
-
 /*home page */
-
-/*slider*/
-
-div.bx-viewport {
-    width: 0%;
-}
-.bx-wrapper .bx-controls-direction a {
-    display: flex;
-    width: 3em;
-    height: 3em;
-    text-indent: 0px;
-    font-size: 5em;
-    padding: 0 ;
-    color: rgba(247,234,200,0.5);
-
+.site-description {
+  position: relative;
 }
 
-.bx-wrapper .bx-controls-direction .bx-next  {
-   display: flex;
-   justify-content: flex-end;
+.site-description h1 {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  font-size: 1.75em;
+  position: relative;
+  z-index: 5;
+  padding-top: 10%;
 }
 
-.bx-wrapper .bx-controls-direction .bx-prev  {
-   display: flex;
-   justify-content: flex-start;
-}
-.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
-    background: rgb(31,218,154);
+.site-description h2 {
+  font-weight: bold;
+  text-align: center;
+  color:white;
+  position: relative;
+  z-index: 6;
+  margin-bottom: 20%;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a {
-    background: rgba(31,218,154,0.3);
-    display: flex;
-    width: 3em;
-    height: 1em;
-    margin: 0 2em;
-    border-radius: 2em;
+.site-description a {
+  color: blue;
+}
+
+
+.site-description img {
+  position: absolute;
+  border-radius: 2px;
+  opacity: 0.5;
 }
 
 
@@ -143,11 +134,25 @@ div.bx-viewport {
     clear:both;
   }
 
-
   .hvr-push {
     display: flex;
     flex-direction:row;
 
   }
 
+  .site-description h1 {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    position: relative;
+    z-index: 5;
+    padding-top: 10%;
+    margin-bottom: 4%;
+
+}
+  .site-description h2 {
+    font-size: 2.5em;
+    margin-bottom: 25%;
+  }
 }
